@@ -1,3 +1,8 @@
-@media only screen and (min-width: 32.5em){
+@media screen and (max-width: 640px){
+    #content{
+
+        flex-direction: row;
+
+    }
 
 }

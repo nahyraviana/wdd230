@@ -1,8 +1,8 @@
 body{
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(61, 61, 61);
+    font-family: 'Cormorant Garamond', serif;
+    background-color: 1E0D35;
     color: rgb(45, 28, 5);
     margin: 0 auto;
     margin-bottom: 0%;
@@ -11,7 +11,7 @@ body{
 }
 #content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     width: 70%;
     margin-left: 10%;
@@ -23,37 +23,44 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:antiquewhite;
-    width: 20%;
-    height: 80%;
-    border-radius: 0.3em;
-    margin-top: 0.5%;
+    background-color: EACA6D;
+    width: 40%;
+    height: 20%;
+    border-radius: 0.1em;
+    margin-top: 5%;
 }
 #list{
     list-style: none;
     display: flex;
+    align-items: left;
     flex-direction: column;
     align-items: flex-end;
     width: 80%;
-    background-color:antiquewhite;
-    border-radius: 0.3em;
+    
+    border-radius: 0.1em;
     padding: 2%;
     margin: 0.5%;
     text-align: left;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     color:rgb(28, 24, 24);
 }
 footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align:center;
-    background-color: slategray;
-    color: azure;
+    background-color: EACA6D;
+    color: black;
+    height: 100px;
     
 }
 li{
     margin-top: 10%;
-    background-color: antiquewhite
+    padding: 20px;
+   background-color: EACA6D;
+    border-style: outset;
+    border-radius: 5px;
+    list-style: none;
+    align-items: flex-start;
 }
 
 img{
