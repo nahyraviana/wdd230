@@ -1,4 +1,4 @@
-@media only screen and (max-width: 32.5em){
+@media only screen and (max-width: 520px){
 #images {
     display: flex;
     flex-direction: column;}}
