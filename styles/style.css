@@ -1,70 +1,77 @@
+header{
+    border-bottom: 3px solid  #333;
+
+}
 body{
     font-size: 20px;
     line-height: 1.5;
     font-family: 'Fira Sans Condensed', sans-serif;
-    background-color: 1E0D35;
+    background-color: #1E0D35;
     color: rgb(45, 28, 5);
-    margin: 0 auto;
-    margin-bottom: 0%;
-    padding-bottom: 0%;
+
 
 }
 #content{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 30% 70%;
     justify-content: center;
-    width: 70%;
-    margin-left: 10%;
+    margin: 0%;
+    margin-right: 0%;
+   
 }
 #profile-picture{
     border-radius: 50%;
+    justify-content: center;
+    margin-top: 60px;
+
+
 }
 #avatar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: EACA6D;
-    width: 40%;
-    height: 20%;
-    border-radius: 0.1em;
-    margin-top: 5%;
+    display:grid;
+    grid-template-rows: min-content;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-right: 3px solid  rgb(108, 107, 107);
+
+
 }
+
 #list{
+    margin-left: 50px;
+    margin-top: 30px;
     list-style: none;
     display: flex;
     align-items: left;
     flex-direction: column;
-    align-items: flex-end;
-    width: 80%;
-    
-    border-radius: 0.1em;
-    padding: 2%;
-    margin: 0.5%;
     text-align: left;
     justify-content: space-between;
     align-items: left;
     color:rgb(28, 24, 24);
 }
 footer{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align:center;
-    background-color: EACA6D;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #aaa;
     color: black;
-    height: 100px;
-    
+    block-size: 100px;
+    border-top: 3px solid  rgb(108, 107, 107);
+
 }
 li{
-    margin-top: 10%;
     padding: 20px;
-   background-color: EACA6D;
-    border-style: outset;
-    border-radius: 5px;
+
+  
+
+    
     list-style: none;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 img{
     max-width: 100%;
-    display: block;
 }
 

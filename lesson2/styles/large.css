@@ -1,26 +1,32 @@
+header{
+    border-bottom: 3px solid  #333;
+}
 body{
     font-size: 18px;
     font-family: 'Fira Sans Condensed', sans-serif;
     background-color: white;
     color: rgb(45, 28, 5);
     align-items: center;
+    justify-content: center;
 
 }
 #images{
     display: grid;
     grid-template-columns: repeat(3,300px);
-    margin: 110px;
     width: 100%;
-    gap: 120px;
+    gap: 130px;
+    margin-left: 130px;
+    align-items: center;
+
 }
 
 footer{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align:center;
-    background-color: EACA6D;
-    height: 100px;
-
-
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #aaa;
+    border-top: 3px solid  rgb(108, 107, 107);
 }
 p{
     font-weight: 300;
@@ -47,14 +53,6 @@ article {
     grid-template-columns: 100%;
     text-align: center;
     align-items: center;
-}
-
-img{
-    margin-left: 30px;
-    border-color: black;
-}
-#banner{
-    margin: 0%;
 }
 
 
