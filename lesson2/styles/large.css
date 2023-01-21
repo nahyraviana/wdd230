@@ -2,9 +2,16 @@
     height: 100%;
     width: 100%;
 }
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 header{
     border-bottom: 3px solid  #333;
-    background-color: #03989e;
+    block-size: 180px;
+
 
 }
 body{
@@ -16,15 +23,6 @@ body{
     justify-content: center;
 
 }
-#images{
-    display: grid;
-    grid-template-columns: repeat(3,300px);
-    width: 100%;
-    gap: 130px;
-    margin-left: 130px;
-    align-items: center;
-
-}
 
 footer{
     display: flex;
@@ -34,31 +32,144 @@ footer{
     background-color: #aaa;
     border-top: 3px solid  rgb(108, 107, 107);
 }
-p{
-    font-weight: 300;
-    border: 30px;
-}
-h1,h2{
-    font-weight: 600;
-}
-
-
 h3{
     font-style: italic;
     font-weight: 300;
 }
-
-html, body {
-    width: 100%;
-    height: 100%;
+p{
+    font-weight: 300;
+    border: 30px;
 }
-
-article {
-    min-height: 100%;
+img{
+    
+    justify-self: center;
+}
+main {
     display: grid;
-    grid-template-columns: 100%;
     text-align: center;
     align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7,1fr auto);
+    align-items: center;
+    justify-items:auto;
+}
+
+.tittle{
+    font-weight: 600;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+.name{
+    font-weight: 600;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.principle-tittle-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.walmart-tittle{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.link1{
+     grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.walmart-img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+
+
+}
+
+.principle-description-1{
+     grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8;
 }
 
 
+/*Second principle*/
+
+.principle-tittle-2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.jcpenny-tittle{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.link2{
+     grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.jcpenny-img{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+
+}
+
+.principle-description-2{
+     grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+/*Third principle*/
+
+.principle-tittle-3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.playstation-tittle{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.link3{
+     grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.playstation-img{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+
+}
+
+.principle-description-3{
+     grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
