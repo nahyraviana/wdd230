@@ -7,10 +7,7 @@ body{
     font-size: 20px;
     line-height: 1.5;
     font-family: 'Fira Sans Condensed', sans-serif;
-  
     color: rgb(45, 28, 5);
-
-
 }
 main{
     display: grid;
@@ -18,7 +15,6 @@ main{
     justify-content: center;
     margin: 0%;
     margin-right: 0%;
-   
 }
 #profile-picture{
     border-radius: 50%;
@@ -35,8 +31,6 @@ main{
     text-align: center;
     background-color: #f1f1f1;
     border-right: 3px solid  rgb(108, 107, 107);
-
-
 }
 
 #list{
@@ -64,10 +58,6 @@ footer{
 }
 li{
     padding: 20px;
-
-  
-
-    
     list-style: none;
     align-items: stretch;
 }
