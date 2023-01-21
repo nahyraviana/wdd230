@@ -1,5 +1,11 @@
+#banner{
+    height: 100%;
+    width: 100%;
+}
 header{
     border-bottom: 3px solid  #333;
+    background-color: #03989e;
+
 }
 body{
     font-size: 18px;

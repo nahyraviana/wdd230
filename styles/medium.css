@@ -1,6 +1,29 @@
-@media  only screen and (max-width: 500px){
-    #content{
+@media  only screen and (max-width: 600px){
+    h2,p{
+        font-size: medium;
+    }
+
+    h1{
+        font-size: large;
+        text-align: center;
+
+    }
+
+    #list{
+        font-size: medium;
+        margin-left: 10px;
+
+    }
+
+    main{
        grid-template-columns: auto;
     }
 
+    #banner-picture{
+        image-rendering: crisp-edges;
+    }
+
+    #avatar{
+        border-right: 0
+    }
 }
