@@ -1,7 +1,4 @@
-#banner-picture{
-    width: 100%;
-    height: 100%;
-}
+
 
 body{
     font-size: 20px;
@@ -19,17 +16,17 @@ main{
 #profile-picture{
     border-radius: 50%;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 40px;
 
 
 }
-#avatar{
+header{
     display:grid;
     grid-template-rows: min-content;
     justify-content: center;
     font-weight: bold;
     text-align: center;
-    background-color: #f1f1f1;
+    background-color:#03979D;
     border-right: 3px solid white;
 }
 
@@ -62,7 +59,5 @@ li{
     align-items: stretch;
 }
 
-img{
-    max-width: 100%;
-}
+
 
