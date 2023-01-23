@@ -3,17 +3,7 @@
     width: 100%;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-}
 
-header{
-    border-bottom: 3px solid  #333;
-    block-size: 200px;
-
-
-}
 body{
     font-size: 18px;
     font-family: 'Fira Sans Condensed', sans-serif;
@@ -25,23 +15,24 @@ body{
 }
 
 footer{
+    
     display: flex;
     flex-flow: column;
     text-align: center;
     justify-content: center;
     background-color: #aaa;
-    border-top: 3px solid  rgb(108, 107, 107);
+    border-top: 3px solid white;
 }
 h3{
     font-style: italic;
     font-weight: 300;
 }
 p{
-    font-weight: 300;
+    font-weight: 400;
     border: 30px;
 }
 img{
-    
+
     justify-self: center;
 }
 main {
