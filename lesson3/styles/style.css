@@ -30,7 +30,8 @@ footer {
 }
 
 h1 {
-	font-size: 1.1rem;
+	font-size: 32px;
+    padding: 30px;
 }
 h2 {
 	color: #536878;
@@ -90,6 +91,21 @@ footer p {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td,th { 
+    border: 1px solid black;
+    padding: 10px;
+}
+.h1-sample, .footer-sample{
+    background-color: #03979D;
+}
+.nav-sample{
+    color: #fff;
+    background-color: #57605f;
 }
 
 /* Tablet Views ******************************/
