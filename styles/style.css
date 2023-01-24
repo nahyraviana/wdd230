@@ -7,16 +7,10 @@ body{
     color: rgb(45, 28, 5);
 }
 
-main{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0%;
-    margin-right: 0%;
-}
+
 h2{
-    align-items: center;
-    text-align: center;
+   text-align: center;
+    
 }
 #profile-picture{
     border-radius: 50%;
@@ -34,19 +28,20 @@ header{
     justify-content: space-around;
 }
 
+ul{
+    margin: 0;
+    padding: 0;
+}
 
 #list{
-
-    margin-top: 30px;
+    padding: 40px;
     list-style: none;
     display: flex;
-    align-items: left;
+    justify-items: center;
     flex-direction: column;
     text-align: left;
     justify-content: space-between;
-    align-items: left;
     color:rgb(28, 24, 24);
-
 }
 footer{
     display: flex;
@@ -63,7 +58,7 @@ li{
     font-size: 25px;
     list-style: none;
     align-items: stretch;
-    padding: 30px;
+    padding: 20px;
 }
 
 
