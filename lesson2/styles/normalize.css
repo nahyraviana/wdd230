@@ -21,8 +21,12 @@
    */
   
   body {
-    margin: 0;
-  }
+  
+  margin-right: 100px;
+  margin-left: 100px;
+
+}
+  
   
   /**
    * Render the `main` element consistently in IE.
