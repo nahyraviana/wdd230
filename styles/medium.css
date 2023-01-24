@@ -21,8 +21,11 @@
     header{
         display: block;
         padding: 20px;
-        block-size: 200px;
+        margin: 0%;
   
+    }
+    li{
+    padding: 0;
     }
     #profile-picture{
     width: 120px;

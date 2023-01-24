@@ -34,7 +34,6 @@ header{
     grid-template-columns: 1fr 2fr;
     align-items: center;
     justify-content: space-around;
-     margin-right: 50px;
 }
 
 
@@ -62,7 +61,7 @@ footer{
 
 }
 li{
-    padding: 20px;
+    
     list-style: none;
     align-items: stretch;
 }
