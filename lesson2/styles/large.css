@@ -15,7 +15,6 @@ body{
 }
 
 footer{
-    
     display: flex;
     flex-flow: column;
     text-align: center;
@@ -43,6 +42,7 @@ main {
     grid-template-rows: repeat(7,1fr auto);
     align-items: center;
     justify-items:auto;
+    border: 2px bold black;
 }
 
 .tittle{

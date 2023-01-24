@@ -19,20 +19,21 @@ h2{
 }
 #profile-picture{
     border-radius: 50%;
-    justify-content: center;
-    margin-top: 40px;
+    padding: 30px;
+    margin-left: 50px;
+
+
 
 
 }
 header{
-    display:grid;
-    grid-template-rows: min-content;
-    justify-content: center;
-    font-weight: bold;
+    display: grid;
     text-align: center;
-    background-color:#03979D;
-    border-right: 3px solid white;
+    background-color: #03979D;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
 }
+
 
 #list{
 

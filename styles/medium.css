@@ -1,4 +1,4 @@
-@media  only screen and (max-width: 600px){
+@media  only screen and (max-width: 700px){
     h2,p{
         font-size: medium;
     }
@@ -18,12 +18,14 @@
     main{
        grid-template-columns: auto;
     }
-
-    #banner-picture{
-        image-rendering: crisp-edges;
+    header{
+        display: block;
+  
     }
-
-    #avatar{
-        border-right: 0
+    #profile-picture{
+        
+        border-radius: 50%;
+    padding:auto;
+    margin-left:0;
     }
 }
