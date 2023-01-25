@@ -1,10 +1,15 @@
 
 
 body{
+    
     font-size: 20px;
     line-height: 1.5;
     font-family: 'Fira Sans Condensed', sans-serif;
-    color: rgb(45, 28, 5);
+    color: rgb(0, 0, 0);
+  margin-right: 300px;
+  margin-left: 300px;
+
+
 }
 
 
@@ -34,14 +39,14 @@ ul{
 }
 
 #list{
-    padding: 40px;
-    list-style: none;
     display: flex;
-    justify-items: center;
     flex-direction: column;
-    text-align: left;
     justify-content: space-between;
-    color:rgb(28, 24, 24);
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+    background-color: #F4F5F5;
+    padding: 40px;
+
 }
 footer{
     display: flex;
@@ -55,11 +60,29 @@ footer{
 
 }
 li{
+    padding: 10px;
     font-size: 25px;
     list-style: none;
-    align-items: stretch;
-    padding: 20px;
+    align-items: space;
+    border: solid 2px white; 
 }
 
+.link {
+    margin: 2rem 0 3rem 0;
+    
+}
+
+.link a {
+    text-decoration: none;
+    background-color:#F4F5F5;
+    color: black;
+    padding: .5em 1em .5em 1em;
+    border-radius: .1em;
+    transition: background-color .4s;
+}
+
+.link a:hover {
+    background-color: #0dd6aa;
+}
 
 

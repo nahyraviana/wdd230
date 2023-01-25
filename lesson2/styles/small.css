@@ -1,4 +1,10 @@
 @media only screen and (max-width: 520px){
 main {
     display: flex;
-    flex-direction: column;}}
+    flex-direction: column;
+}
+body{
+    margin: 0%;
+}
+
+}
