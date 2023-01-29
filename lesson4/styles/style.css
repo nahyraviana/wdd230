@@ -1,0 +1,88 @@
+
+
+body{
+    
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: rgb(0, 0, 0);
+  margin-right: 300px;
+  margin-left: 300px;
+
+
+}
+
+
+h2{
+   text-align: center;
+    
+}
+#profile-picture{
+    border-radius: 50%;
+    padding: 30px;
+    justify-self: right;
+
+
+}
+header{
+    display: grid;
+    text-align: center;
+    background-color: #03979D;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+    background-color: #F4F5F5;
+    padding: 40px;
+
+}
+footer{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #aaa;
+    color: black;
+    block-size: 100px;
+    border-top: 3px solid white;
+
+}
+li{
+    padding: 10px;
+    font-size: 25px;
+    list-style: none;
+    align-items: space;
+    border: solid 2px white; 
+}
+
+.link {
+    margin: 2rem 0 3rem 0;
+    
+}
+
+.link a {
+    text-decoration: none;
+    background-color:#F4F5F5;
+    color: black;
+    padding: .5em 1em .5em 1em;
+    border-radius: .1em;
+    transition: background-color .4s;
+}
+
+.link a:hover {
+    background-color: #0dd6aa;
+}
+
+
