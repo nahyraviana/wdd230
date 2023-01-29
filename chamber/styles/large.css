@@ -1,9 +1,9 @@
-@media only screen and (min-width: 64rem){
+@media only screen and (min-width: 70rem){
     nav ul li a{
         padding: .5rem 1rem;
     }
     body{
-        margin-right: 80px;
-        margin-left: 80px;
+        margin-right: 50px;
+        margin-left: 50px;
     }
 }
