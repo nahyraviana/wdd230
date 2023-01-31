@@ -8,6 +8,7 @@
 body {
 	font-size: 16px;
 	font-family: "Sansita", Ubuntu, sans-serif;
+	line-height: 1.8;
 }
 
 /* phone or baseline views **************************/
@@ -137,6 +138,7 @@ td,th {
 	grid-row: 3/4;
     font-size: 18px;
 	margin: 1rem;
+	padding: 30px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	background-color:  #f0e2bf;
 }
@@ -149,18 +151,18 @@ td,th {
 	font-size: 18px;
 	margin: 1rem;
 	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 30px;
+
 
 }
 
 #jenna-pic{
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
+	width: 400px;
 }
 #mark-pic{
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
+	width: 400px;
+	justify-self: center;
+	
 }
 #scenario{
 	grid-column: 1/3;
