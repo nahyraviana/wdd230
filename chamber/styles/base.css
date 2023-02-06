@@ -72,15 +72,15 @@ main{
 }
 
 #hero{
-    height: 250px;
+  
     background-color: #F4F5F5;
     margin: 0%;
     border: .3px solid #aaa
 }
-
+#house-img{
+    width: 100%;
+}
 #events{
-    height: 250px;
-
     grid-row: 1/2;
     grid-column:1/2;
 
@@ -91,8 +91,6 @@ main{
 
 }
 #weather{
-    height: 250px;
-
     grid-row: 2/3;
     grid-column: 1/2;
      background-color: #F4F5F5;
@@ -101,8 +99,7 @@ main{
 
 }
 #join{
-    height: 250px;
-
+ 
     grid-column: 1/2;
     grid-row: 3/4;
      background-color: #F4F5F5;
@@ -111,7 +108,7 @@ main{
 
 }
 #news{
-    height: 250px;
+  
 
     grid-column: 2/3;
     grid-row: 3/4;
@@ -121,7 +118,7 @@ main{
 
 }
 #spotlights{
-    height: 250px;
+
 
     background-color: #F4F5F5;
     margin: 0%;
@@ -132,20 +129,20 @@ main{
 
 }
 #s1{
-    height: 150px;
+    
 
     border: .3px solid #aaa
 
 }
 #s2{
-    height: 150px;
+ 
 
     border: .3px solid #aaa
 
 }
 
 #s3{
-    height: 150px;
+    
 
     border: .3px solid #aaa
 
