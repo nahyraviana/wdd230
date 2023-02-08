@@ -2,10 +2,6 @@
     nav ul li a{
         padding: .5rem 1rem;
     }
-    body{
-        margin-right: 50px;
-        margin-left: 50px;
-    }
 
 header{
     display: grid;
@@ -13,7 +9,8 @@ header{
     justify-content: space-between;
     grid-template-columns: 2fr 3fr 1fr;
     text-align: center;
-    background-color: #03979D;
+    color: #F4F5F5;
+    background-color: #2B2828;
     width: 100%;
     
 }
@@ -25,14 +22,13 @@ header{
     display: block;
 }
 section h3{
-    font-style: italic;
+    font-style: thin;
+
     margin: 0%;
 }
 #header-logo,#footer-logo{
-    width: 80px; 
-    height: 80px;
+  
     border-radius: 50%;
-
     margin-left: 30px;
 
 }
@@ -52,9 +48,10 @@ section h3{
 .date{
     grid-column-start: 1;
     grid-column-end: 4;
-    background-color: #F4F5F5;
+    background-color: #E6994F;
     margin: 20px;
     border: .3px solid rgba(0,0,0,0.5);
+    border-radius: 300px;
 }
 main{
     display: grid;
@@ -163,8 +160,8 @@ footer{
     gap: 10px;
     grid-template-rows: auto;
     text-align: center;
-    background-color: #aaa;
-    color: black;
+    background-color: #AB9683;
+    color: whitesmoke;
     border-top: 3px solid white;
     padding-left: 40px;
     padding-right: 40px;
@@ -196,7 +193,7 @@ footer{
 }
 
 #footer-info{
-    border-top: solid .5px #333;
+    border-top: solid .5px white;
     grid-column: 1/4;
     grid-row: 2/3;
 
@@ -212,6 +209,6 @@ footer{
     color: black;
     padding: .5em 1em .5em 1em;
     border-radius: .1em;
-    transition: background-color .4s;
+    transition: .4s;
 }
 }

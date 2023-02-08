@@ -25,7 +25,6 @@ header{
     justify-content: space-between;
     grid-template-columns: 2fr 3fr;
     text-align: center;
-    background-color: #03979D;
     width: fit-content;
     max-width: 100%;
 }
@@ -37,7 +36,6 @@ header{
     display: block;
 }
 section h3{
-    font-style: italic;
     margin: 0%;
 }
 #header-logo,#footer-logo{
