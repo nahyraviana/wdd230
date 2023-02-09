@@ -13,10 +13,10 @@ h2{
     text-transform: uppercase;
     background-image: linear-gradient(
     -225deg,
-    #E6994F 0%,
-    white  29%,
-    #e6994f 67%,
-    white 100%);
+    black 0%,
+    #7b4b1a 29%,
+    black 67%,
+    #7b4b1a 100%);
 
   background-clip: border-box;
   background-size: 200% auto;
@@ -109,6 +109,7 @@ h1{
     border: .3px solid rgba(0,0,0,0.5);
     border-radius: 300px;
 }
+
 main{
     display: grid;
     grid-template-rows:  repeat(5, 1fr);
@@ -131,7 +132,7 @@ button{
 #hero{
     background-image: url("../images/house1.jpeg");
     background-position-x: left;
-    background-position-y: bottom;
+    background-position-y: top;
     background-attachment:fixed;
     padding: 100px;
     margin: 0%;
@@ -143,7 +144,6 @@ button{
     flex-direction: column;
     justify-items: center;
     justify-content: space-evenly;
-
 }
 
 
