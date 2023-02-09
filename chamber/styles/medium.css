@@ -164,7 +164,6 @@ footer{
     gap: 10px;
     grid-template-rows: auto;
     text-align: center;
-    background-color: #aaa;
     color: black;
     border-top: 3px solid white;
     padding-left: 40px;
