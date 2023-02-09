@@ -147,9 +147,10 @@ main{
 }
 
 #s3{
+    display: none;
     
 
-    border: .3px solid #aaa
+
 
 }
 
