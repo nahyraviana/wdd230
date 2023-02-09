@@ -123,7 +123,6 @@ main{
 
     grid-column: 3/4;
     grid-row: 1/4;
-    background-color: #F4F5F5;
     margin: 0%;
     border: .3px solid #aaa;
     display: grid;
@@ -159,7 +158,7 @@ footer{
     grid-template-rows: auto;
     text-align: center;
     background-color: #AB9683;
-    color: whitesmoke;
+    color: #2B2828;
     border-top: 3px solid white;
     padding-left: 40px;
     padding-right: 40px;
@@ -172,6 +171,7 @@ footer{
     display: flex;
     align-items: flex-end;
     justify-items: flex-end;
+    margin-left: 60px;
 }
 #name{
     grid-column: 2/3;
@@ -181,6 +181,7 @@ footer{
 }
 #last-name{
     margin: 0%;
+
 }
 #info a {grid-column: 3/4;
     grid-row: 1/2;
@@ -191,7 +192,7 @@ footer{
 }
 
 #footer-info{
-    border-top: solid .5px white;
+    border-top: solid .5px #2B2828;
     grid-column: 1/4;
     grid-row: 2/3;
 

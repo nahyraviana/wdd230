@@ -78,7 +78,6 @@ main{
     text-align: center;
     gap: 10px;
     background-color:#Ffff;
-
 }
 
 #hero{
@@ -88,9 +87,7 @@ main{
     border: .3px solid #aaa;
     background-image: url("../images/house.jpeg");
    padding: 100px;
-
 }
-
 
 #events{
     grid-row: 5/6;
@@ -98,9 +95,8 @@ main{
     background-color: #F4F5F5;
     margin: 0%;
     border: .3px solid #aaa
-
-
 }
+
 #weather{
     grid-row: 5/6;
     grid-column: 3/4;
@@ -108,8 +104,8 @@ main{
     margin: 0%;
     border: .3px solid #aaa;
     padding-top :30px;
-
 }
+
 #join{
     display: block;
     grid-column: 1/4;
@@ -118,44 +114,38 @@ main{
     margin: 0%;
     border: .3px solid #aaa;
     padding: 100px;
-
 }
+
 #news{
     grid-column: 1/4;
     grid-row: 2/3;
-     background-color: #F4F5F5;
     padding: 30px;
     border: .3px solid #aaa
-
 }
+
 #spotlights{
     grid-column: 1/4;
     grid-row: 3/4;
-    background-color: #F4F5F5;
     margin: 0%;
     border: .3px solid #aaa;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
 #s1{
     padding: 30px;
     border: .3px solid #aaa
-
 }
+
 #s2{
     padding: 30px;
     padding-left: 100px;
     padding-right: 100px;
     border: .3px solid #aaa
-
 }
 
 #s3{
     display: none;
-
-
 }
 
 footer{
@@ -164,7 +154,6 @@ footer{
     gap: 10px;
     grid-template-rows: auto;
     text-align: center;
-    color: black;
     border-top: 3px solid white;
     padding-left: 40px;
     padding-right: 40px;
