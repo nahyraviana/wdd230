@@ -77,13 +77,11 @@ main{
     margin: 10px;
     text-align: center;
     gap: 10px;
-    background-color:#Ffff;
 }
 
 #hero{
     grid-column: 1/4;
     grid-row: 1/2;
-    background-color: #F4F5F5;
     border: .3px solid #aaa;
     background-image: url("../images/house.jpeg");
    padding: 100px;
@@ -92,7 +90,6 @@ main{
 #events{
     grid-row: 5/6;
     grid-column:1/3;
-    background-color: #F4F5F5;
     margin: 0%;
     border: .3px solid #aaa
 }
@@ -100,7 +97,6 @@ main{
 #weather{
     grid-row: 5/6;
     grid-column: 3/4;
-     background-color: #F4F5F5;
     margin: 0%;
     border: .3px solid #aaa;
     padding-top :30px;
@@ -110,7 +106,6 @@ main{
     display: block;
     grid-column: 1/4;
     grid-row: 4/5;
-     background-color: #F4F5F5;
     margin: 0%;
     border: .3px solid #aaa;
     padding: 100px;

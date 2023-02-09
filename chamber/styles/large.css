@@ -59,16 +59,13 @@ main{
     grid-template-columns: 1fr 2fr 1fr;
     gap: 10px;
     grid-template-rows: auto;
-    background-color:#Ffff;
     margin: 10px;
     text-align: center;
 }
 
 #hero{
-
     grid-column: 2/3;
     grid-row: 1/3;
-    background-color: #F4F5F5;
     margin: 0%;
     border: .3px solid #aaa
 }
@@ -77,70 +74,57 @@ main{
 }
 
 #events{
-   
-
     grid-row: 1/2;
     grid-column:1/2;
-
-    background-color: #F4F5F5;
     margin: 0%;
-    border: .3px solid #aaa
-
-
+    border: 1px solid #aaa;
 }
+
 #weather{
    height: 300px;
-
     grid-row: 2/3;
     grid-column: 1/2;
-     background-color: #F4F5F5;
     margin: 0%;
-    border: .3px solid #aaa
+    border: .3px solid #aaa;
 
 }
+
 #join{
    height: 400px;
-
     grid-column: 1/2;
     grid-row: 3/4;
-     background-color: #F4F5F5;
     margin: 0%;
-    border: .3px solid #aaa
+    border: .3px solid #aaa;
 
 }
-#news{
-   
 
+#news{
     grid-column: 2/3;
     grid-row: 3/4;
-     background-color: #F4F5F5;
     margin: 0%;
     border: .3px solid #aaa
-
 }
-#spotlights{
-   
 
+#spotlights{
     grid-column: 3/4;
     grid-row: 1/4;
     margin: 0%;
     border: .3px solid #aaa;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-
 }
+
 #s1{
     grid-row: 1/2;
     padding: 20px;
     border: .3px solid #aaa
-
 }
+
 #s2{
     grid-row: 2/3;
     padding: 20px;
     border: .3px solid #aaa;
     margin-top:  0%;
-
 }
 
 #s3{
@@ -148,7 +132,6 @@ main{
     grid-row: 3/4;
     padding: 20px;
     border: .3px solid #aaa;
-
 }
 
 footer{
@@ -164,6 +147,7 @@ footer{
     padding-right: 40px;
     padding-top: 40px;
 }
+
 #footer-logo{
 
     grid-column: 1/2;
@@ -173,12 +157,13 @@ footer{
     justify-items: flex-end;
     margin-left: 60px;
 }
+
 #name{
     grid-column: 2/3;
     grid-row: 1/2;
     text-align: left;
-   
 }
+
 #last-name{
     margin: 0%;
 
@@ -199,7 +184,6 @@ footer{
 }
 .link {
     margin: 2rem 0 3rem 0;
-    
 }
 
 .link a {
