@@ -122,11 +122,16 @@ button{
     width: 60%;
     height: 40px;
     border-radius: 12px;
+    color: #F4F5F5;
     align-self: center;
+    border: solid #AC9886;
+    background-color:#AC9886;
 }
 
 #hero{
-    background-image: url("../images/house.jpeg");
+    background-image: url("../images/house1.jpeg");
+    background-position-x: left;
+    background-position-y: bottom;
     background-attachment:fixed;
     padding: 100px;
     margin: 0%;

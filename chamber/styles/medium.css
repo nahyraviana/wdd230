@@ -83,7 +83,6 @@ main{
     grid-column: 1/4;
     grid-row: 1/2;
     border: .3px solid #aaa;
-    background-image: url("../images/house.jpeg");
    padding: 100px;
 }
 
