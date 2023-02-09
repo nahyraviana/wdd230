@@ -1,4 +1,4 @@
-@media only screen and (min-width: 70rem){
+@media only screen and (min-width: 60rem){
     nav ul li a{
         padding: .5rem 1rem;
     }
@@ -12,8 +12,11 @@ header{
     color: #F4F5F5;
     background-color: #2B2828;
     width: 100%;
-    
 }
+ nav ul#primaryNav{
+        font-size: 20px;
+
+    }
 #tittle{
   margin-top: 30px;
   display: flex;
@@ -27,7 +30,6 @@ section h3{
     margin: 0%;
 }
 #header-logo,#footer-logo{
-  
     border-radius: 50%;
     margin-left: 30px;
 
@@ -46,8 +48,7 @@ section h3{
     padding: 3px;
 }
 .date{
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column: 1/4;
     background-color: #E6994F;
     margin: 20px;
     border: .3px solid rgba(0,0,0,0.5);
@@ -138,7 +139,8 @@ main{
 #s2{
     grid-row: 2/3;
     padding: 20px;
-    border: .3px solid #aaa
+    border: .3px solid #aaa;
+    margin-top:  0%;
 
 }
 
@@ -147,7 +149,6 @@ main{
     grid-row: 3/4;
     padding: 20px;
     border: .3px solid #aaa;
-    margin-top:30px
 
 }
 
