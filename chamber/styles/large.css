@@ -64,6 +64,8 @@ main{
 }
 
 #hero{
+    background-image: url("../images/large.jpg");
+
     grid-column: 2/3;
     grid-row: 1/3;
     margin: 0%;

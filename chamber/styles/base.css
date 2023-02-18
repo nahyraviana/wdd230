@@ -128,8 +128,15 @@ button{
     background-color:#AC9886;
 }
 
+.hero-button:hover{
+    color: #2B2828;
+
+}
+
+
+
 #hero{
-    background-image: url("../images/house1.jpeg");
+    background-image: url("../images/small.jpg");
     background-position-x: left;
     background-position-y: top;
     background-attachment:fixed;
@@ -148,6 +155,7 @@ button{
 
 #house-img{
     width: 100%;
+    height: auto;
 }
 #events{
     grid-row: 2/3;
