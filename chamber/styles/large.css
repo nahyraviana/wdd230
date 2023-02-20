@@ -90,6 +90,10 @@ main{
     border: .3px solid #aaa;
 
 }
+#temp{
+    font-size: 50px;
+}
+#chill{font-size: 30px;}
 
 #join{
    height: 400px;
