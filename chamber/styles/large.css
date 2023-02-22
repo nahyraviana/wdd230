@@ -25,14 +25,13 @@ header{
     display: block;
 }
 section h3{
-    font-style: thin;
-
+    font-style:normal;
     margin: 0%;
 }
+
 #header-logo,#footer-logo{
     border-radius: 50%;
     margin-left: 30px;
-
 }
 
 #social-logo{
