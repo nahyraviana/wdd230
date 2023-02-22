@@ -1,3 +1,5 @@
+/*jshint esversion: 7 */
+
 const datefield = document.querySelector(".date");
 const now = new Date();
 
@@ -20,3 +22,14 @@ function toggleMenu(){
 
 const x = document.getElementById("hamburguerBtn");
 x.onclick = toggleMenu;
+
+const day = now.getDay();
+const joinMess = document.getElementById("joinUs");
+
+if (day == 1) {
+  joinMess.style.display = "block";
+} else if (day == 2) {
+  joinMess.style.display = "block";
+} else {
+  joinMess.style.display = "none";
+}

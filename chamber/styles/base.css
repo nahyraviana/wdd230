@@ -151,7 +151,11 @@ button{
     justify-items: center;
     justify-content: space-evenly;
 }
-
+#joinUs{
+    background-color: #ffffff;
+    color: #2B2828;
+    padding: 5%;
+}
 
 #house-img{
     width: 100%;
