@@ -1,4 +1,4 @@
-/*jshint esversion: 6 */
+/*jshint esversion: 7 */
 
 /*Date display*/
 
@@ -27,16 +27,7 @@ function toggleMenu(){
 const x = document.getElementById("hamburguerBtn");
 x.onclick = toggleMenu;
 
-const day = now.getDay();
-const joinMess = document.getElementById("joinUs");
 
-if (day == 1) {
-  joinMess.style.display = "block";
-} else if (day == 2) {
-  joinMess.style.display = "block";
-} else {
-  joinMess.style.display = "none";
-}
 
 /* Lazy loading of images*/
 
@@ -57,7 +48,8 @@ const options = {
 };
 
 if ('IntersectionObserver' in window) {
-    const obsrvr = new IntersectionObserver((items, observer) => {
+    const obsrvr = new IntersectionObserver((items, observer) =>
+    {
         items.forEach((item) =>
         {
             if (item.isIntersecting)
@@ -66,7 +58,7 @@ if ('IntersectionObserver' in window) {
                 observer.unobserve(item.target);
             }
         });
-    }, options)
+    }, options);
     allImages.forEach((img) =>
     {
         obsrvr.observe(img);
@@ -77,6 +69,18 @@ else {
     {
         lazyLoad(img);
     });
+}
+
+/*Special Monday & Tuesday Message display*/
+const day = now.getDay();
+const joinMess = document.getElementById("joinUs");
+
+if (day == 1) {
+  joinMess.style.display = "block";
+} else if (day == 2) {
+  joinMess.style.display = "block";
+} else {
+  joinMess.style.display = "block";
 }
 
 /* Number Of Visits - Local Storage*/

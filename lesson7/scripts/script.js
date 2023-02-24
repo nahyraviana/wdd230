@@ -17,7 +17,8 @@ const options = {
 };
 
 if ('IntersectionObserver' in window) {
-    const obsrvr = new IntersectionObserver((items, observer) => {
+    const obsrvr = new IntersectionObserver((items, observer) =>
+    {
         items.forEach((item) =>
         {
             if (item.isIntersecting)
@@ -26,7 +27,7 @@ if ('IntersectionObserver' in window) {
                 observer.unobserve(item.target);
             }
         });
-    }, options)
+    }, options);
     allImages.forEach((img) =>
     {
         obsrvr.observe(img);
