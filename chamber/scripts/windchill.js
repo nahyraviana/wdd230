@@ -13,7 +13,6 @@ let windChill = document.getElementById("chill");
 if (temp >= 20 && speed <3){
     windChill = "N/A";
 }
-
 else{
 windChill =Math.round(35.74 + 0.6215 * temp - 35.75 * (speed ** 0.16) + 0.4275 * temp * (speed ** 0.16));
 chill.innerHTML = windChill;

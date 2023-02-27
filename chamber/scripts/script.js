@@ -77,26 +77,30 @@ const joinMess = document.getElementById("joinUs");
 
 if (day == 1) {
   joinMess.style.display = "block";
-} else if (day == 2) {
+}
+else if (day == 2){
   joinMess.style.display = "block";
-} else {
-  joinMess.style.display = "block";
+}
+else{
+  joinMess.style.display = "none";
 }
 
 /* Number Of Visits - Local Storage*/
 
- var numberOfVisits = localStorage.getItem("numberOfVisits");
+ let numberOfVisits = localStorage.getItem("numberOfVisits");
 
-  if (!numberOfVisits) {
-    numberOfVisits = 0;
-  }
+if (!numberOfVisits)
+{
+  numberOfVisits = 0;
+
   numberOfVisits = +numberOfVisits + 1;
 
   localStorage.setItem("numberOfVisits", numberOfVisits);
-  document.getElementById("visit").innerHTML = numberOfVisits;
+  document.getElementById("visit").innerHTML = "numberOfVisits";
+}
 
   if (numberOfVisits < 2) {
-    document.getElementById("special-message").innerHTML = 
+    document.getElementById("special-message").innerHTML =
     "Thanks for visiting!";
   }
 
