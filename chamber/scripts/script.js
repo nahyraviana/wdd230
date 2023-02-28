@@ -87,7 +87,7 @@ else{
 
 /* Number Of Visits - Local Storage*/
 const visitDisplay = document.getElementById("visit");
-let numberOfVisits = Number(windows.localStorage.getItem("visits-ls"));
+let numberOfVisits = Number(windows.localStorage.getItem("numberOfVisits"));
 
 if (numberOfVisits !== 0)
 {
@@ -99,5 +99,5 @@ else
 }
 
 numberOfVisits++;
-localStorage.setItem("visits-ls", numberOfVisits);
+localStorage.setItem("numberOfVisits", numberOfVisits);
 /*no local storage value at the web page*/
