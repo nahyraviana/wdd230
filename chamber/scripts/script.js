@@ -86,29 +86,18 @@ else{
 }
 
 /* Number Of Visits - Local Storage*/
+const visitDisplay = document.getElementById("visit");
+let numberOfVisits = Number(windows.localStorage.getItem("visits-ls"));
 
- let numberOfVisits = localStorage.getItem("numberOfVisits");
-
-if (!numberOfVisits)
+if (numberOfVisits !== 0)
 {
-  numberOfVisits = 0;
-
-  numberOfVisits = +numberOfVisits + 1;
-
-  localStorage.setItem("numberOfVisits", numberOfVisits);
-  document.getElementById("visit").innerHTML = "numberOfVisits";
+  visitDisplay.textContent = numberOfVisits;
+}
+else
+{
+  visitDisplay.textContent = "This is your first visit";
 }
 
-  if (numberOfVisits < 2) {
-    document.getElementById("special-message").innerHTML =
-    "Thanks for visiting!";
-  }
-
-  function clearCacheAndReload() {
-    localStorage.removeItem("numberOfVisits");
-    location.reload();
-  }
-
-  function reload() {
-    location.reload();
-  }
+numberOfVisits++;
+localStorage.setItem("visits-ls", numberOfVisits);
+/*no local storage value at the web page*/
