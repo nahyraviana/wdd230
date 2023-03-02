@@ -59,8 +59,7 @@ if ('IntersectionObserver' in window) {
             }
         });
     }, options);
-    allImages.forEach((img) =>
-    {
+    allImages.forEach(img => {
         obsrvr.observe(img);
     });
 }
@@ -72,32 +71,32 @@ else {
 }
 
 /*Special Monday & Tuesday Message display*/
-const day = now.getDay();
-const joinMess = document.getElementById("joinUs");
+let day = now.getDay();
+let joinMess = document.getElementById("joinUs");
 
-if (day == 1) {
+if (day == 1 || day == 2 ) {
   joinMess.style.display = "block";
 }
-else if (day == 2){
-  joinMess.style.display = "block";
-}
+
 else{
   joinMess.style.display = "none";
 }
 
 /* Number Of Visits - Local Storage*/
-const visitDisplay = document.getElementById("visit");
-let numberOfVisits = Number(windows.localStorage.getItem("numberOfVisits"));
 
-if (numberOfVisits !== 0)
+let visitDisplay = document.getElementById("visits");
+let numVisits = Number(window.localStorage.getItem("numberOfVisits"));
+
+if (numVisits !== 0)
 {
-  visitDisplay.textContent = numberOfVisits;
+  visitDisplay.textContent = numVisits;
 }
 else
 {
   visitDisplay.textContent = "This is your first visit";
 }
 
-numberOfVisits++;
-localStorage.setItem("numberOfVisits", numberOfVisits);
+numVisits++;
+localStorage.setItem("numberOfVisits", numVisits);
 /*no local storage value at the web page*/
+
