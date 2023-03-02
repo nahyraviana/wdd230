@@ -374,3 +374,38 @@ nav ul.open {
 
 #hamburguerBtn.open span:nth-child(1){display: none;}
 #hamburguerBtn.open span:nth-child(2){display: block;}
+
+
+
+/*-----------------THANK YOU PAGE-----------------------*/
+.thanks{
+    display: block;
+}
+.tyContainer{
+  color:white;
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 1rem;
+  border: var(--border-white);
+  border-radius: 4px;
+}
+
+.thankyouH1 {
+  text-align: center;
+  width: 100%;
+  border-radius: 3px;
+  padding: 1em;
+  background: #837198;
+  border: 1px solid white;
+
+}
+
+.thankyouP {
+    color: #2B2828;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  border: var(--border-white);
+  padding: 3em;
+}

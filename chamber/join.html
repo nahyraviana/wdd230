@@ -48,13 +48,106 @@
         </div>
         <div class="date"></div>
     </header>
-    <main>
-
-      
-      
-
-
-     
+    <main class="mainJoin">
+        <h1 class="joinH1">Mountainview Chamber of Commerce Application</h1>
+        <div class="formGrid">
+            <form method="get" action="thankyou.html">
+                <div class="formContainer">
+                    <fieldset>
+                        <legend class="legend">Applicant Information</legend>
+                        <label>First Names<span class="redReminder">*</span>
+                            <input type="text" name="fname" required /></label>
+                        <label>Last Name<span class="redReminder">*</span>
+                            <input type="text" name="lname" required /></label>
+                        <label>Email<span class="redReminder">*</span>
+                            <input type="email" name="email" placeholder="youremail@youremail.com" required /></label>
+                        <label>Cell Phone Number<span class="redReminder">*</span>
+                            <input type="tel" name="phone" required /></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="legend">Business Type and Position</legend>
+                        <label>
+                            Business Name<span class="redReminder">*</span>
+                            <input type="text" name="bname" required /></label>
+                        <label>Business Position Title <br />(Minimum of 7 characters,
+                            letters, spaces, and hyphens only.)<input type="text" pattern="[a-zA-Z\s\-]{7,}"
+                                name="title" /></label>
+                        <label for="content">Business Description</label>
+                        <textarea name="textarea" id="content"></textarea>
+                        <input type="hidden" id="date" name="date" value="CurrentTime" />
+                        <input type="hidden" id="time" name="time" value="CurrentDate" />
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend class="legend">Membership Levels</legend>
+                        <label class="subs" id="1"><input for="1" class="no100" type="radio" name="memberships" />
+                            <span> NP Member (Non-Profit)</span></label>
+                        <label class="subs" id="2"><input for="2" class="no100" type="radio" name="memberships" />
+                            <span> Bronze Member</span></label>
+                        <label class="subs" id="3"><input for="3" class="no100" type="radio" name="memberships" />
+                            <span> Silver Member</span></label>
+                        <label class="subs" id="4"><input for="4" class="no100" type="radio" name="memberships" />
+                            <span> Gold Member</span></label>
+                    </fieldset>
+                    <input type="submit" value="Join Chamber" name="button" class="mySubmit" />
+                </div>
+            </form>
+    
+            <section class="memberships">
+                <div>
+                    <h2>Membership Benefits</h2>
+                    <h3>NP Member</h3>
+                    <p>
+                        NP Membership is for non profit organizations and there is no fee.
+                    </p>
+                </div>
+                <div>
+                    <h2>Bronze Membership</h2>
+                    <h3>$480 (Annual Investment)</h3>
+                    <p>Free postings on the Chamber Job Zone.</p>
+                    <p>
+                        Join leads and business development groups as well as other
+                        Chamber councils and committees.
+                    </p>
+                    <p>
+                        Weekly updates where we share information about new chamber
+                        programs, initiatives, festivals, networking events and advocacy
+                        efforts.
+                    </p>
+                    <p>Access to free and confidential business counseling.</p>
+                </div>
+    
+                <div>
+                    <h2>Silver Membership</h2>
+                    <h3>$980 (Annual Investment)</h3>
+                    <p>To include all benefits of Business Builder as well as…</p>
+                    <p>You get a second location or a second business membership.</p>
+                    <p>
+                        Mini Campaign: We will create a social media campaign for your
+                        business or organization. Pictures and copy will promote you, your
+                        product or service to the community via 4 unique social media
+                        posts over 2 weeks.
+                    </p>
+                    <p>
+                        Premier Ribbon Cutting: Photos, video, social media and email
+                        promotion to 5,000 member contacts.
+                    </p>
+                </div>
+    
+                <div>
+                    <h2>Gold Membership</h2>
+                    <h3>$2,500 (Annual Investment)</h3>
+                    <p>
+                        Includes all the benefits of our Bronze and Silver members and
+                        more...
+                    </p>
+                    <p>
+                        For more information about our Gold Membership please contact
+                        membership@mountainviewcoc.com
+                    </p>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
