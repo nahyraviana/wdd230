@@ -6,7 +6,7 @@
             "address": "1110 W 294N Orem Ut",
             "phone_number": "(801) 430 2219",
             "website": "https://www.cascadecontruction.com/",
-            "image": "images/01.jpg",
+            "image": "images/01",
             "membership_level": "Gold"
         },
         {
@@ -15,7 +15,7 @@
             "address": "1089 state st Salt Lake UT",
             "phone_number": "(385) 429-6888",
             "website": "https://www.homie.com./",
-            "image": "images/02.jpg",
+            "image": "images/02",
             "membership_level": "Silver"
         },
         {
@@ -24,7 +24,7 @@
             "address": "920 S Hallway Dr",
             "phone_number": "801 332 8184",
             "website": "https://www.realtor.com/",
-            "image": "images/03.jpg",
+            "image": "images/03",
             "membership_level": "Bronze"
         },
         {
@@ -33,7 +33,7 @@
             "address": "998 N 1200 W Orem UT",
             "phone_number": "(801) 420 2929",
             "website": "https://www.green-techconstruction.com/",
-            "image": "images/04.jpg",
+            "image": "images/04",
             "membership_level": "Gold"
         },
         {
@@ -42,7 +42,7 @@
             "address": "55 S 200 e Murray UT",
             "phone_number": "435 793 0981",
             "website": "http://www.sk3construction.com/",
-            "image": "images/05.jpg",
+            "image": "images/05",
             "membership_level": "Silver"
         },
         {
