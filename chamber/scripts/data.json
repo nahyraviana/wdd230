@@ -6,7 +6,7 @@
             "address": "1110 W 294N Orem Ut",
             "phone_number": "(801) 430 2219",
             "website": "https://www.cascadecontruction.com/",
-            "image": "images/companies/01",
+            "image": "images/01.jpg",
             "membership_level": "Gold"
         },
         {
@@ -15,7 +15,7 @@
             "address": "1089 state st Salt Lake UT",
             "phone_number": "(385) 429-6888",
             "website": "https://www.homie.com./",
-            "image": "images/companies/02",
+            "image": "images/02.jpg",
             "membership_level": "Silver"
         },
         {
@@ -24,7 +24,7 @@
             "address": "920 S Hallway Dr",
             "phone_number": "801 332 8184",
             "website": "https://www.realtor.com/",
-            "image": "images/companies/03",
+            "image": "images/03.jpg",
             "membership_level": "Bronze"
         },
         {
@@ -33,7 +33,7 @@
             "address": "998 N 1200 W Orem UT",
             "phone_number": "(801) 420 2929",
             "website": "https://www.green-techconstruction.com/",
-            "image": "images/companies/04",
+            "image": "images/04.jpg",
             "membership_level": "Gold"
         },
         {
@@ -42,7 +42,7 @@
             "address": "55 S 200 e Murray UT",
             "phone_number": "435 793 0981",
             "website": "http://www.sk3construction.com/",
-            "image": "images/companies/05",
+            "image": "images/05.jpg",
             "membership_level": "Silver"
         },
         {
@@ -51,7 +51,7 @@
             "address": "700 university pkwy Provo UT",
             "phone_number": "305 800 2211",
             "website": "https://www.agentpronto.com/",
-            "image": "images/companies/06",
+            "image": "images/06.jpg",
             "membership_level": "Bronze"
         },
         {
@@ -60,7 +60,7 @@
             "address": "Juana Manso 999",
             "phone_number": "11-5353-4497",
             "website": "https://www.mulesoft.com/",
-            "image": "images/companies/07",
+            "image": "images/07",
             "membership_level": "Gold"
         },
         {
@@ -69,7 +69,7 @@
             "address": "Av. Dorrego 2161",
             "phone_number": "+1 888-235-2699",
             "website": "https://auth0.com/",
-            "image": "images/companies/08",
+            "image": "images/08",
             "membership_level": "Silver"
         },
         {
@@ -78,7 +78,7 @@
             "address": "Av. Rivadavia 2134",
             "phone_number": "11-4951-9741",
             "website": "https://careers.virtualmind.com/",
-            "image": "images/companies/09",
+            "image": "images/09",
             "membership_level": "Bronze"
         }
     ]
