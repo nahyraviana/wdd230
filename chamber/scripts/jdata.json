@@ -1,0 +1,85 @@
+{
+    "companies": [
+        {
+            "id": "01",
+            "name": "Ualá",
+            "address": "Nicaragua 4677",
+            "phone_number": "11-5263-3563",
+            "website": "https://www.uala.com.ar/",
+            "image": "images/companies/01",
+            "membership_level": "Gold"
+        },
+        {
+            "id": "02",
+            "name": "Mercado Libre",
+            "address": "Arias 3751",
+            "phone_number": "11-4640-8000",
+            "website": "https://www.mercadolibre.com.ar/",
+            "image": "images/companies/02",
+            "membership_level": "Silver"
+        },
+        {
+            "id": "03",
+            "name": "10 Pines",
+            "address": "Av. Leandro N. Alem 896",
+            "phone_number": "11-6091-3125",
+            "website": "https://www.10pines.com/",
+            "image": "images/companies/03",
+            "membership_level": "Bronze"
+        },
+        {
+            "id": "04",
+            "name": "Real Trends",
+            "address": "Castillo 1366",
+            "phone_number": "11-5168-6162",
+            "website": "https://www.real-trends.com/",
+            "image": "images/companies/04",
+            "membership_level": "Gold"
+        },
+        {
+            "id": "05",
+            "name": "3XM Group",
+            "address": "Humberto Primo 680",
+            "phone_number": "11-1483-8185",
+            "website": "http://www.3xmgroup.com/",
+            "image": "images/companies/05",
+            "membership_level": "Silver"
+        },
+        {
+            "id": "06",
+            "name": "Medallia",
+            "address": "Arévalo 1840",
+            "phone_number": "11-6091-7590",
+            "website": "https://www.medallia.com/",
+            "image": "images/companies/06",
+            "membership_level": "Bronze"
+        },
+        {
+            "id": "07",
+            "name": "MuleSoft",
+            "address": "Juana Manso 999",
+            "phone_number": "11-5353-4497",
+            "website": "https://www.mulesoft.com/",
+            "image": "images/companies/07",
+            "membership_level": "Gold"
+        },
+        {
+            "id": "08",
+            "name": "Auth0",
+            "address": "Av. Dorrego 2161",
+            "phone_number": "+1 888-235-2699",
+            "website": "https://auth0.com/",
+            "image": "images/companies/08",
+            "membership_level": "Silver"
+        },
+        {
+            "id": "09",
+            "name": "Virtualmind",
+            "address": "Av. Rivadavia 2134",
+            "phone_number": "11-4951-9741",
+            "website": "https://careers.virtualmind.com/",
+            "image": "images/companies/09",
+            "membership_level": "Bronze"
+        }
+    ]
+}
