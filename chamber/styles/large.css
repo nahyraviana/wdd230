@@ -141,7 +141,7 @@ main{
 /*Discover Page*/
 .discover-container{
     display: grid;
-    grid-template-columns: 50%,50%;
+    grid-template-columns: 1fr, 1fr;
   grid-template-rows: auto;
   gap: 50px;
   row-gap: 30px;

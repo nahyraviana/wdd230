@@ -159,7 +159,9 @@ button{
 #join-us{
     background-color: #ffffff;
     color: #2B2828;
-    padding: 5%;
+    padding: 1%;
+    grid-column: 1/4;
+
 }
 
 #house-img{
