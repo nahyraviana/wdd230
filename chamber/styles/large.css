@@ -63,7 +63,7 @@ main{
 }
 
 #hero{
-    background-image: url("../images/large.jpg");
+    background-image: url("../images/house1.jpeg");
 
     grid-column: 2/3;
     grid-row: 1/3;
