@@ -252,6 +252,13 @@ tr:nth-child(even) {
     background-color: #e6984f59;
 }
 
+/*Directory*/
+  .imgDirectoryList {
+    display: inline;
+    max-width: 100px;
+    background-color: white;
+  }
+  
 /*FOOTER*/
 
 footer{

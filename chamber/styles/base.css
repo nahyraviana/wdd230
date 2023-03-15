@@ -417,6 +417,7 @@ nav ul.open {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   text-align: center;
+  grid-template-rows: auto;
 }
 
 .flexContainerCardCompany {
@@ -428,16 +429,16 @@ nav ul.open {
   align-content: center;
   flex-direction: column;
   background-color: white;
-  color: white;
-  box-shadow: 5px 5px 0px #ff3e9d;
+  color:#2B2828;
+  box-shadow: 5px 5px 0px #837198;
 }
 
 .flexContainerCardCompany p {
-  color: #93291e;
+  color: #2B2828;
 }
 
 .h2Directory {
-  color: #93291e;
+  color: #2B2828;
   font-size: 1.5em;
   padding: 1em;
   margin: 1em;
@@ -447,8 +448,8 @@ nav ul.open {
 
 .h3Directory {
   font-style: normal;
-  background-image: linear-gradient(to left, #ed213a, #93291e);
-  color: white;
+  background-color: #E6994F;
+  color: #2B2828;
   width: 100%;
   border-radius: 3px;
   border-left: 0;
@@ -487,7 +488,7 @@ nav ul.open {
 }
 
 .customList {
-  color: white;
+  color: #2B2828;
   text-align: center;
   border: var(--border-white);
   border-radius: 3px;
@@ -539,7 +540,7 @@ nav ul.open {
   border: 1px solid white;
   border-radius: 3px;
   margin-bottom: 0.75em;
-  background: linear-gradient(to right, #f12711, #f5af19);
+  background-color: white;;
 }
 
 .fieldsetContact {
@@ -550,4 +551,314 @@ nav ul.open {
 iframe {
   width: 150px;
   height: 150px;
+}
+
+
+
+/*discovery*/
+
+
+main div section {
+  /* margin: 0.1em; */
+  padding: 1em;
+  text-align: left;
+}
+
+.redReminder {
+  color: red;
+  font-weight: bolder;
+}
+
+.formContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  background-color: white;
+  border-radius: 3px;
+  flex-direction: column;
+  padding-right: 1ee;
+  padding-bottom: 1e;
+}
+
+.formContainerContact {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  background-color: white;
+  border-radius: 3px;
+  flex-direction: column;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+.mainJoin,
+.mainDirectory {
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-top: 0.75em;
+  border: 2px solid white;
+}
+
+.mainJoin {
+  background-color: white;
+  padding: 1rem;
+}
+
+.mainDirectory {
+  background-color: white;
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.mainContact {
+  /* background: linear-gradient(to right, #2143ce, #b21f1f, #fdbb2d); */
+  background-color: #AC9886;
+}
+
+.joinH1 {
+  border-radius: 3px;
+  padding: 1em;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.directoryH1 {
+  border-radius: 4px;
+  color: #2B2828;
+  background-color: white;
+  margin: 1em 1em 0 1em;
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  border: var(--border-white);
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.buttonsContainer{
+  grid-row: 2/3;
+    grid-column: 2/3;
+
+}
+.directoryContainerList, .directoryContainer{
+  grid-row: 3/4;
+  grid-column: 1/4;
+}
+
+#card-button,
+#list-button {
+  align-self: center;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2%;
+  border-radius: 3px;
+  color: white;
+  background-image: linear-gradient(to left, #837198, #837198);
+  margin: 1em;
+  padding: 1em;
+
+}
+
+#list-button {
+  margin: 1em 1em 1em 0;
+}
+
+.formGrid {
+  display: block;
+}
+
+.legend {
+  color: white;
+  font-weight: bold;
+  background-color: #5D3C1F;
+  padding: 0.75em;
+  margin: 0.75em;
+  border: 1px solid #837198;
+  border-radius: 3px;
+  box-shadow: 5px 5px 0px #837198;
+  width: 90%;
+}
+
+.legendContact {
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(to left, #AC9886,#AC9886);
+  padding: 0.75em;
+  margin: 0.75em;
+  border: 1px solid #837198;
+  border-radius: 3px;
+  box-shadow: 5px 5px 0px white;
+  width: 90%;
+}
+
+.contactH2 {
+  font-weight: bold;
+  background: linear-gradient(to left, #2B2828, #2B2828);
+  padding: 0.75em;
+  border: 1px solid white;
+  border-radius: 3px;
+  margin-bottom: 0.75em;
+}
+
+form {
+  width: 100%;
+}
+
+form fieldset {
+  margin: 10px;
+  border: 1px solid #837198;
+  background: linear-gradient(to left, #AC9886, #AC9886);
+}
+
+fieldset {
+  width: 95%;
+}
+
+form label {
+  display: block;
+  color: white;
+  font-weight: bolder;
+  font-size: 0.9em;
+  margin: 1em;
+}
+
+input {
+  display: block;
+  font-size: 1rem;
+  border: 1px solid #837198;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #837198;
+  width: 100%;
+  max-width: 45rem;
+  background-color: #f2f2f2;
+}
+
+textarea {
+  color: #5D3C1F;
+  margin-left: 1em;
+  width: 90%;
+  font-size: 1rem;
+  border-radius: 3px;
+  border: 1px solid #837198;
+}
+
+.no100 {
+  display: inline-block;
+  width: fit-content;
+  margin-right: 1em;
+  width: 1;
+}
+
+.subs {
+  font-weight: normal;
+  padding: 1em;
+  border: var(--border-white);
+  border-radius: 3px;
+}
+
+:checked + span {
+  font-weight: bold;
+  transform: var(--my-transform);
+  transition: 0.5s;
+}
+
+.mySubmit {
+  align-self: center;
+  width: auto;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-image: linear-gradient(to bottom right,#E6994F, #E6994F);
+  margin: 1em;
+  text-transform: uppercase;
+}
+
+input:required {
+  border-left: red solid 3px;
+}
+
+input:valid {
+  border-left: green solid 3px;
+}
+
+.memberships {
+  background-color: white;
+  /* display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  overflow: auto;
+  flex-direction: column; */
+  margin-top: 1em;
+  padding: 0;
+}
+
+.memberships div {
+  border: 2px solid #837198;
+  box-shadow: 5px 5px 0px #837198;
+  border-radius: 4px;
+  margin: 1em;
+  text-align: left;
+  height: min-content;
+}
+
+.memberships div h2,
+.memberships div h3,
+.memberships div p {
+  padding: 0.5em;
+}
+
+.memberships div p {
+  color: #2B2828;
+}
+
+.memberships div h3 {
+  border: none;
+  color: white;
+}
+
+.memberships div h2 {
+  background-color:#AC9886;
+  font-weight: bolder;
+  margin-left: 0;
+}
+
+.tyContainer {
+  margin-top: 0.75em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  border: var(--border-white);
+  border-radius: 3px;
+  padding: 1em;
+}
+
+.thankyouH1 {
+  text-align: center;
+  width: 100%;
+  border-radius: 3px;
+  padding: 1em;
+  border: 1px solid white;
+}
+
+.thankyouP {
+  width: 100%;
+  font-size: large;
+  text-align: center;
+  border: var(--border-white);
+  padding: 1em;
+}
+
+.visitPage {
+  font-weight: bolder;
+  margin-top: 1em;
+  padding: 0.75rem;
 }

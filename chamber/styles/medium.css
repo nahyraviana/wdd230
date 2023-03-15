@@ -207,7 +207,28 @@
 
 /* directory*/
 
- .imgDirectory:hover {
+
+  .customList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+
+  .customList li {
+    display: list-item;
+    margin: 1em;
+  }
+
+ 
+
+  .action-call a:hover,
+  .join a:hover {
+    background-color: #376996;
+  }
+
+  .imgDirectory:hover {
     transform: scale(1.3);
     transition: 1s;
   }
@@ -226,6 +247,11 @@
     transform: scale(1.1);
   }
 
+  .discover-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 2fr);
+    grid-gap: 1em;
+  }
   /*.discover-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 2fr);
