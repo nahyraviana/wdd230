@@ -56,28 +56,28 @@
         },
         {
             "id": "07",
-            "name": "MuleSoft",
-            "address": "Juana Manso 999",
-            "phone_number": "11-5353-4497",
-            "website": "https://www.mulesoft.com/",
+            "name": "AppFolio",
+            "address": "221 S 100 E Eagle Mountain UT",
+            "phone_number": "(801) 500 3291",
+            "website": "https://www.appfolio.com/",
             "image": "images/07",
             "membership_level": "Gold"
         },
         {
             "id": "08",
-            "name": "Auth0",
-            "address": "Av. Dorrego 2161",
-            "phone_number": "+1 888-235-2699",
-            "website": "https://auth0.com/",
+            "name": "Trulia",
+            "address": "789 N 361 W Springville UT",
+            "phone_number": "(801) 902 7011",
+            "website": "https://www.trulia.com/",
             "image": "images/08",
             "membership_level": "Silver"
         },
         {
             "id": "09",
-            "name": "Virtualmind",
-            "address": "Av. Rivadavia 2134",
-            "phone_number": "11-4951-9741",
-            "website": "https://careers.virtualmind.com/",
+            "name": "Zillow",
+            "address": "400 E State st American Fork UT",
+            "phone_number": "(385) 307 4312",
+            "website": "https://www.zillow.com/",
             "image": "images/09",
             "membership_level": "Bronze"
         }

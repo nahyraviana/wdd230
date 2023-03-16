@@ -16,6 +16,7 @@ fetch(requestURL)
   .then(function (jsonObject) {
     const companies = jsonObject["companies"];
     companies.forEach(displayCompaniesCards);
+
     companies.forEach(displayCompaniesList);
   });
 
@@ -115,10 +116,13 @@ function displayCompaniesList(company) {
 cardViewButton.addEventListener("click", () => {
   customList.classList.add("hidden");
   main.classList.remove("hidden");
+  document.querySelector(".directoryContainerList").style.display = 'none';
 });
 
 listViewButton.addEventListener("click", () => {
   customList.classList.remove("hidden");
   main.classList.add("hidden");
+  document.querySelector(".directoryContainerList").style.display = 'block';
 });
+
 

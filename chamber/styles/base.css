@@ -647,7 +647,9 @@ main div section {
   grid-row: 3/4;
   grid-column: 1/4;
 }
-
+.directoryContainerList{
+  display: none;
+}
 #card-button,
 #list-button {
   align-self: center;
