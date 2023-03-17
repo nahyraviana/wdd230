@@ -130,8 +130,9 @@ button{
     background-color:#837198;
 }
 
-.hero-button:hover{
+button:hover{
     color: #2B2828;
+    background-color: #E6994F;
 
 }
 
