@@ -267,8 +267,8 @@ footer{
     gap: 10px;
     grid-template-rows: auto;
     text-align: center;
-    background-color: #AB9683;
-    color: #2B2828;
+    background-color: #2B2828;
+    color: white;
     border-top: 3px solid white;
     padding-left: 40px;
     padding-right: 40px;
@@ -290,7 +290,10 @@ footer{
     grid-row: 1/2;
     text-align: left;
 }
-
+#footer-tittle{
+    background-color:#E6994F;
+    color: #E6994F;
+}
 #last-name{
     margin: 0%;
 
