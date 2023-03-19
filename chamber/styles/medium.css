@@ -213,17 +213,21 @@
 
 .formGridContact{
     display: grid;
-    grid-auto-columns: auto;
+    grid-template-columns: 1fr,1fr;
 }
 .formContainerContact{
+    margin-left: 30px;
     grid-column: 1/2;
     grid-row: 1/2;
 }
 .sectionContact{
-    padding-top: 0%;
-   text-align: left;
-    grid-column: 2/3;
+    box-sizing: content-box;
+    grid-column: 3/4;
     grid-row: 1/2;
+ margin: 40px;
+ margin-right: 60px;
+ margin-top: 0%;
+ margin-left: 0%;
 }
 .contactH2{
     padding: 0%;
