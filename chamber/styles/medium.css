@@ -62,21 +62,18 @@
         padding: 3px;
     }
     .date{
-        grid-column: 1/4;
-        background-color: #E6994F;
-        margin: 20px;
-        border: .3px solid rgba(0,0,0,0.5);
-        width: auto;
-        border-radius: 300px;
-    }
+        grid-column: 2/4;
 
+
+    }
+   
     main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
         margin: 10px;
         text-align: center;
-        gap: 10px;
+        gap: 8px;
     }
 
     #hero{
