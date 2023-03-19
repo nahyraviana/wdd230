@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank you</title>
+    <title>Contact</title>
     <meta name="description"
         content="Chamber of Commerce Assignment for Nahyra Viana in WDD 230: Web Fronted Development at Brigham Young University - Idaho">
     <link href="styles/normalize.css" rel="stylesheet">
@@ -16,7 +15,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/660a090010.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -24,7 +22,7 @@
         <div id="tittle">
             <img id="header-logo" src="images/logo.webp" alt="logo image">
             <section id="company-name">
-                <h1>MOUNTAINVIEW</h1>
+                <h1 id="first-name">MOUNTAINVIEW</h1>
                 <h3 id="header-subtittle">Chamber of Commerce</h3>
             </section>
         </div>
@@ -35,7 +33,7 @@
                 <li><a href="join.html">Join</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="discover.html">Discover</a></li>
-
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div id="social-logo">
@@ -44,20 +42,53 @@
             <a href="https://linkedin.com"><img id="linkedin-logo" src="images/linkedin.png" alt=" linkedin logo image"
                     width="60"></a>
         </div>
-        <div class="date"></div>
-    </header>
-    <main class="thanks">
-        <div class="tyContainer">
-            <h1 class="thankyouH1">Thank you for your Application</h1>
-            <p class="thankyouP">
-                Your application has been received.
-                <br />Please check your email for more information
-                about how to get started.
-            </p>
-        <button id="ty-button" onclick="window.location.href='../chamber/index.html';">Back to Home</button>
+        <p id="join-us"> &#9888; Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
 
-        </div>
-    </main>
+        <span class="date"></span>
+    </header>
+
+<main class="mainContact">
+    <h2 class="contactH1">Contact Us</h2>
+    <div class="formGridContact">
+        <form method="get" action="thankyoumessage.html">
+            <div class="formContainerContact">
+                <fieldset class="fieldsetContact">
+                    <legend class="legendContact">Contact Form</legend>
+                    <label>Name<span class="redReminder">*</span>
+                        <input type="text" name="fname" required /></label>
+                    <label>Email<span class="redReminder">*</span>
+                        <input type="email" name="email" placeholder="youremail@youremail.com" required /></label>
+                    <label for="content">
+                        Question/Concerns <span class="redReminder">*</span>
+                    </label>
+                    <textarea name="textarea" id="content"></textarea>
+                    <input type="hidden" id="date" name="date" value="CurrentTime" />
+                    <input type="hidden" id="time" name="time" value="CurrentDate" />
+                </fieldset>
+                <input type="submit" value="Submit your message" name="button" class="mySubmit" />
+            </div>
+        </form>
+        <section class="sectionContact">
+            <h3 class="contactH2">Address </h3>
+            <p>Mountainview Chamber of Commerce</p>
+            <p>529 S Chadwick St, Salt Lake City, UT 84106</p>
+            <br>
+            <h3 class="contactH2">Phone</h3>
+            <a href="tel:+541145474645" class="custom-a">+1 (385) 203 4322</a>
+            <br>
+            <br>
+            <h3 class="contactH2">Email</h4>
+            <p>support@montainviewcc.org</p>
+            <br>
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png"
+                        alt="Facebook logo" width="30"/></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png"
+                        alt="Linkedin logo" width="30"/></a>
+            </div>
+        </section>
+    </div>
+</main>
     <footer>
     
         <img id="footer-logo" src="images/logo.webp" alt="logo image">
@@ -78,6 +109,7 @@
     </footer>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/joinmessage.js"></script>
     </body>
     
     </html>

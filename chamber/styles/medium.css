@@ -204,8 +204,30 @@
 /*Join*/
 .formGrid {
   display: grid;
-  grid-template-columns: 2fr,1fr;
- 
+  grid-template-columns: 1fr,1fr;
+}
+
+/*contact*/
+
+
+
+.formGridContact{
+    display: grid;
+    grid-auto-columns: auto;
+}
+.formContainerContact{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.sectionContact{
+    padding-top: 0%;
+   text-align: left;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.contactH2{
+    padding: 0%;
+
 }
 /* directory*/
 
