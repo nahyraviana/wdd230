@@ -38,7 +38,8 @@ header{
     text-align: center;
     color:  #F4F5F5;
     background-color:#2B2828;
-    width: fit-content;
+    width: 100%;
+    max-width: 100%;
 }
 #tittle{
   margin-top: 30px;
@@ -123,8 +124,8 @@ button:hover{
 
 #hero{
     background-image: url("../images/house1.jpeg");
-    background-position-x: left;
-    background-position-y: top;
+    background-position-x: right;
+    background-position-y: bottom;
     background-attachment:fixed;
     padding: 80px;
     margin: 0%;
@@ -165,7 +166,7 @@ button:hover{
 }
 #weather{
   background-image: url("../images/mountainland.jpeg");
-  background-size: 750px;
+  background-size:100%;
     grid-row: 3/4;
     margin: 0%;
     border: .3px solid #aaa;

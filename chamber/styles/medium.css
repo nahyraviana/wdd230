@@ -2,17 +2,22 @@
     nav button{
         display: none;
     }
+    nav{
+        padding: 0%;
+    }
     nav ul#primaryNav{
         display: flex ;
         margin-left: 2vw;
         justify-content: flex-start;
             border-left: 1px solid rgba(0, 0, 0, 0.3);
-            font-size: small;
+       
 
         }
         nav ul li a{
             border: none;
             border-right: 1px solid rgba(0, 0, 0, 0.3);
+     font-size:18px;
+     
         }
         #header-logo{
         width: 128px;
@@ -26,7 +31,6 @@
         justify-content: space-between;
         grid-template-columns: 2fr 3fr;
         text-align: center;
-        width: fit-content;
     }
 
     #tittle{
@@ -35,6 +39,10 @@
     }
     #company-name{
         display: block;
+
+    }
+    #first-name{
+        font-size: 25px;
     }
     section h3{
         margin: 0%;
