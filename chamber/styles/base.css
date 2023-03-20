@@ -473,7 +473,7 @@ nav ul.open {
 .divAddress,
 .divPhone {
   border-radius: 3px;
-  border: 2px solid #5D3C1F;
+  border: 2px solid #ededed;;
   text-align: center;
   width: 100%;
   background-color: white;
@@ -517,6 +517,7 @@ nav ul.open {
 .imgDirectory {
   max-width: 100px;
   background-color: white;
+
 }
 
 .customList li {
@@ -559,8 +560,10 @@ nav ul.open {
   padding: 0.75em;
   border-radius: 3px;
   margin-bottom: 0.75em;
-  background-color: white;
-  color: #837198;
+  color:#6f4724;
+  text-shadow: 1px,2px #2B2828;
+  font-size: 40px;
+  margin-top: 10px;
 }
 
 .fieldsetContact {
@@ -642,7 +645,7 @@ main div section {
 }
 
 .joinH1 {
-  color:#785b9a;
+  color:#6f4724;
   letter-spacing: normal;
   border-radius: 3px;
   padding: 1em;
@@ -653,7 +656,7 @@ main div section {
 }
 
 .directoryH1 {
-   color:#785b9a;
+   color:#6f4724;
   letter-spacing: normal;
   border-radius: 3px;
   padding: 1em;
