@@ -29,79 +29,98 @@ x.onclick = toggleMenu;
 
 /*Directory JSON Data*/
 
-
-const directoryUrl = "https://nahyraviana.github.io/wdd230/chamber/scripts/data.json";
-
-const showSpotLight = (directories) => {
-  
-  const spotlights = document.querySelector("#spotlights");
-
-  directories.forEach((directory, index) => {
-    let sectionCard = document.createElement("div");
-    const spot = index + 1;
-    if (spot % 2 === 0) {
-      sectionCard.classList.add(
-        "section",
-        "card",
-        `spot-${spot}`,
-        "olive",
-        "text-white"
-      );
-    } else {
-      sectionCard.classList.add("section", "card", `spot-${spot}`);
-    }
-
-    let cardHeader = document.createElement("div");
-    cardHeader.classList.add("card-header");
-    let heading = document.createElement("h2");
-    heading.textContent = directory.name;
-    cardHeader.append(heading);
-
-    let cardBody = document.createElement("div");
-    cardBody.classList.add("card-body", "text-center");
-
-    let bodyImg = document.createElement("img");
-    bodyImg.setAttribute("src", directory.logo);
-    bodyImg.setAttribute("height", 50);
-    bodyImg.setAttribute("width", 50);
-
-    let bodyText = document.createElement("p");
-    bodyText.textContent = directory.companyMoto;
-
-    cardBody.append(bodyImg);
-    cardBody.append(bodyText);
-
-    let cardFooter = document.createElement('div');
-    cardFooter.classList.add('card-footer', 'text-center');
-    
-    let websiteLink = document.createElement('a');
-    websiteLink.classList.add('link');
-    websiteLink.setAttribute('href', directory.websiteUrl);
-    websiteLink.innerText = 'website';
-
-    cardFooter.innerHTML = `${directory.phoneNumber} | `
-    cardFooter.append(websiteLink);
-
-    sectionCard.append(cardHeader);
-    sectionCard.append(cardBody);
-    sectionCard.append(cardFooter);
-
-    spotlights.append(sectionCard);
-  });
-};
-
-
-const getDirectories = async () => {
-  const response = await fetch(directoryUrl);
-  const data = await response.json();
-  const spotlight = data.directories
-  .filter(directory =>directory.membershipLevel === "Gold"|| directory.membershipLevel === "Silver")
-  .map(value => ({ value, sort: Math.random() }))
-  .sort((a, b) => a.sort - b.sort)
-  .map(({ value }) => value)
-  .slice(0, 3);
-
-  showSpotLight(spotlight);
+async function getBusinessesData() {
+    const response = await fetch("https://nahyraviana.github.io/wdd230/chamber/scripts/data.json");
+    const data = await response.json();
+    displaySpotlights(data.businesses);
 }
 
-getDirectories();
+async function displaySpotlights(businesses) {
+    const spotlight1 = document.querySelector("#s1");
+    const spotlight2 = document.querySelector("#s2");
+    const spotlight3 = document.querySelector("#s3");
+    let adMembers = [];
+
+    businesses.forEach((business) => {
+        if (business.membership_level == "Gold" || business.membership_level == "Silver")
+        {
+            adMembers.push(business);
+        }
+    })
+    
+    shuffleArray(adMembers);
+    //Spotlight 1
+    let chosenSpotlight = adMembers.pop();
+    let logo = document.createElement("img");
+    let siteLink = document.createElement("a");
+    let number = document.createElement("p");
+
+    number.textContent = chosenSpotlight.phone_number;
+    siteLink.textContent = "Visit Site";
+    siteLink.setAttribute("href", chosenSpotlight.website)
+
+    logo.setAttribute("src", chosenSpotlight.image);
+    logo.setAttribute("alt", `siteLogo of ${chosenSpotlight.name}`);
+    logo.setAttribute("loading", "lazy");
+    logo.setAttribute("width", "456");
+    logo.setAttribute("height", "250");
+    logo.setAttribute("class", "businessLogo");
+
+    spotlight1.appendChild(image);
+    spotlight1.appendChild(website);
+    spotlight1.appendChild(phone_number);
+
+    //Spotlight 2
+    let chosenSpotlight2 = adMembers.pop();
+    logo = document.createElement("img");
+    siteLink = document.createElement("a");
+    number = document.createElement("p");
+
+    number.textContent = chosenSpotlight2.phone_number;
+    siteLink.textContent = "Visit Site";
+    siteLink.setAttribute("href", chosenSpotlight2.website)
+
+    logo.setAttribute("src", chosenSpotlight2.image);
+    logo.setAttribute("alt", `siteLogo of ${chosenSpotlight2.name}`);
+    logo.setAttribute("loading", "lazy");
+    logo.setAttribute("width", "456");
+    logo.setAttribute("height", "250");
+    logo.setAttribute("class", "businessLogo");
+
+    spotlight2.appendChild(image);
+    spotlight2.appendChild(website);
+    spotlight2.appendChild(phone_number);
+
+    //Spotlight 3
+    let chosenSpotlight3 = adMembers.pop();
+    logo = document.createElement("img");
+    siteLink = document.createElement("a");
+    number = document.createElement("p");
+
+    number.textContent = chosenSpotlight3.phone_number;
+    siteLink.textContent = "Visit Site";
+    siteLink.setAttribute("href", chosenSpotlight3.website)
+
+    logo.setAttribute("src", chosenSpotlight3.image);
+    logo.setAttribute("alt", `siteLogo of ${chosenSpotlight3.name}`);
+    logo.setAttribute("loading", "lazy");
+    logo.setAttribute("width", "150");
+    logo.setAttribute("height", "200");
+    logo.setAttribute("class", "businessLogo");
+
+    spotlight3.appendChild(image);
+    spotlight3.appendChild(website);
+    spotlight3.appendChild(phone_number);
+}
+
+getBusinessesData();
+
+//Durnstenfeld shuffle method
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+}
