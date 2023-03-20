@@ -288,4 +288,7 @@
     grid-template-columns: repeat(auto-fit, 2fr);
     grid-gap: 1em;
   }
+  .tyContainer{
+    grid-column: 1/4;
+  }
 }

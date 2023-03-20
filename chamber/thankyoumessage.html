@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you for your Message!</title>
+    <meta name="description"
+        content="Chamber of Commerce Assignment for Nahyra Viana in WDD 230: Web Fronted Development at Brigham Young University - Idaho">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/660a090010.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div id="tittle">
+            <img id="header-logo" src="images/logo.webp" alt="logo image">
+            <section id="company-name">
+                <h1 id="first-name">MOUNTAINVIEW</h1>
+                <h3 id="header-subtittle">Chamber of Commerce</h3>
+            </section>
+        </div>
+        <nav>
+            <button id="hamburguerBtn"><span>&#9776;</span><span>x</span></button>
+            <ul id="primaryNav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="social-logo">
+            <a href="https://facebook.com"><img id="facebook-logo" src="images/facebook.png" alt="Facebook logo image"
+                    width="60"></a>
+            <a href="https://linkedin.com"><img id="linkedin-logo" src="images/linkedin.png" alt=" linkedin logo image"
+                    width="60"></a>
+        </div>
+        <p id="join-us"> &#9888; Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+
+        <span class="date"></span>
+    </header>
+    <main>
+        <div class="tyContainer">
+            <h1 class="thankyouH1">Thank you for your message</h1>
+            <p class="thankyouP">
+                Your message has been received.
+                <br />We will get back to you soon with more information
+                about your concern.
+            </p>
+            <button id="ty-button" onclick="window.location.href='../chamber/index.html';">Back to Home</button>
+
+        </div>
+    </main>
+
+    <footer>
+    
+        <img id="footer-logo" src="images/logo.webp" alt="logo image">
+        <section id="name">
+            <h2 id="footer-tittle">Mountainview </h2>
+            <p id="last-name">Chamber of Commerce</p>
+        </section>
+    
+        <div id="info">
+            <p>support@montainviewcc.org</p>
+            <p>+1 (385) 203 4322</p>
+            <a href="https://goo.gl/maps/cmdN2KTsW61GhexAA"> 2529 S Chadwick St, Salt Lake City, UT 84106 </a>
+        </div>
+        <div id="footer-info">
+            <p id="text-footer">&copy; <span id="year"> </span>| Nahyra Viana | USA</p>
+            <p>Last Modified: <span id="modified"> </span></p>
+        </div>
+    </footer>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/joinmessage.js"></script>
+    </body>
+    
+    </html>
