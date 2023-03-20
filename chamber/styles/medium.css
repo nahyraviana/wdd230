@@ -76,7 +76,7 @@
 
     }
    
-    main{
+    .main-grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
@@ -124,7 +124,7 @@
         border: .3px solid #aaa
     }
 
-    #spotlights{
+    .spotlights{
         grid-column: 1/4;
         grid-row: 3/4;
         margin: 0%;
@@ -133,26 +133,26 @@
         flex-direction: row;
         justify-content: space-around;
     }
-    #s1{
+    .s1{
         padding: 30px;
-        border: .3px solid #aaa
+        flex: 50%;
     }
 
-    #s2{
+    .s2{
         padding: 30px;
         padding-left: 100px;
         padding-right: 100px;
-        border: .3px solid #aaa
+        flex: 50%;
     }
 
-    #s3{
+    .s3{
         display: none;
     }
 
         footer{
-            display: grid;
-            grid-template-columns: .5fr 1fr 1fr;
-            gap: 10px;
+        display: grid;
+        grid-template-columns: .5fr 1fr 1fr;
+        gap: 10px;
         grid-template-rows: auto;
         text-align: center;
         border-top: 3px solid white;

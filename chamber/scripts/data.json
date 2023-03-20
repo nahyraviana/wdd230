@@ -22,7 +22,7 @@
             "id": "03",
             "name": "Realtor.com",
             "address": "920 S Hallway Dr",
-            "phone_number": "801 332 8184",
+            "phone_number": "(801) 332 8184",
             "website": "https://www.realtor.com/",
             "image": "images/03",
             "membership_level": "Bronze"
@@ -40,7 +40,7 @@
             "id": "05",
             "name": "SK3 Construction",
             "address": "55 S 200 e Murray UT",
-            "phone_number": "435 793 0981",
+            "phone_number": "(435) 793 0981",
             "website": "http://www.sk3construction.com/",
             "image": "images/05",
             "membership_level": "Silver"
@@ -49,7 +49,7 @@
             "id": "06",
             "name": "Agent Pronto",
             "address": "700 university pkwy Provo UT",
-            "phone_number": "305 800 2211",
+            "phone_number": "(305) 800 2211",
             "website": "https://www.agentpronto.com/",
             "image": "images/06",
             "membership_level": "Bronze"
