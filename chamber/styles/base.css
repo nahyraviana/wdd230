@@ -6,6 +6,9 @@ body{
   width: 100%;
   max-width: 100%;
 }
+p{
+  font-weight: 300;
+}
 html{
   margin: 0%;
   min-width: 400px;
@@ -190,6 +193,13 @@ button:hover{
 #weather-h3{
   text-shadow: none /* 1px 1px white;*/;
   font-size: 25px;
+}
+
+#temp{
+  font-weight: 900;
+  margin: 30px 0px;
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 40px;
 }
 
 #join{
@@ -777,7 +787,6 @@ tr:nth-child(even) {
   border-radius: 3px;
   margin-bottom: 0.75em;
   color:#6f4724;
-  text-shadow: 1px 2px #2B2828;
   font-size: 40px;
   margin-top: 10px;
 }
@@ -873,7 +882,6 @@ main div section {
   border-radius: 3px;
   padding: 1em;
   text-transform: uppercase;
-  text-shadow: 2px 2px #a18abc;
   font-size: 40px;
   margin: 1em 1em 0 1em;
   padding: 1em;
@@ -931,6 +939,7 @@ main div section {
   border-radius: 3px;
   box-shadow: 5px 5px 0px #837198;
   width: 90%;
+  text-align: center;
 }
 
 .legendContact {
@@ -943,6 +952,7 @@ main div section {
   border-radius: 3px;
   box-shadow: 5px 5px 0px #837198;
   width: 90%;
+  text-align: center;
 }
 
 .contactH2 {
