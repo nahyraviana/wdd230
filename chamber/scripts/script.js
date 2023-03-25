@@ -27,3 +27,7 @@ function toggleMenu(){
 const x = document.getElementById("hamburguerBtn");
 x.onclick = toggleMenu;
 
+/* Join Hidden date and time*/
+var currentTime = new Date();
+var curdate = currentTime.getDate();
+document.getElementById("date-of-registration").value = curdate;

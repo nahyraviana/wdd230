@@ -19,7 +19,7 @@ h2{
   text-shadow: 2px 2px #e4d9d9;
 }
 #welcome{
-  font-size: 60px;
+  font-size: 45px;
 color:white;
    text-shadow: 2px 3px #6f6969;
 }
@@ -195,7 +195,6 @@ button:hover{
     display: none;
     margin: 0%;
     border: .3px solid #aaa;
-    box-shadow: 100px,100px #555  ;
     background-color: #E7E0DA;
     padding-bottom: 10px;
 }
@@ -421,7 +420,7 @@ nav ul.open {
 }
 
 #hamburguerBtn span:nth-child(1){display: block;
-align-self: left;}
+align-self:flex-start}
 #hamburguerBtn span:nth-child(2){display: none;}
 
 #hamburguerBtn.open span:nth-child(1){display: none;}
@@ -431,9 +430,9 @@ align-self: left;}
 
 /*-----------------DISCOVER PAGE-----------------------*/
 discover-container{
-    color: #443535;
-    display: grid;
-    grid-template-columns: 1fr, 1fr;
+  color: #443535;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 50px;
   row-gap: 50px;
@@ -453,8 +452,8 @@ margin: 60px;
 
 }
 .discover-container h3{
-        text-shadow: white;
-        padding-bottom: 10px;
+  /*text-shadow: #ffffff;*/
+  padding-bottom: 10px;
 
 }
 .discover-container p{
@@ -752,7 +751,7 @@ tr:nth-child(even) {
   border-radius: 3px;
   margin-bottom: 0.75em;
   color:#6f4724;
-  text-shadow: 1px,2px #2B2828;
+  text-shadow: 1px 2px #2B2828;
   font-size: 40px;
   margin-top: 10px;
 }
@@ -790,8 +789,8 @@ main div section {
   background-color: white;
   border-radius: 3px;
   flex-direction: column;
-  padding-right: 1ee;
-  padding-bottom: 1e;
+  padding-right: 1rem;
+  padding-bottom: 1em;
   grid-column: 1/2;
   grid-row: 2/3;
 }
@@ -841,7 +840,7 @@ main div section {
   border-radius: 3px;
   padding: 1em;
   text-transform: uppercase;
-  text-shadow: 2px,2px #a18abc;
+  text-shadow: 2px 2px #a18abc;
   font-size: 40px;
 
 }
@@ -852,7 +851,7 @@ main div section {
   border-radius: 3px;
   padding: 1em;
   text-transform: uppercase;
-  text-shadow: 2px,2px #a18abc;
+  text-shadow: 2px 2px #a18abc;
   font-size: 40px;
   margin: 1em 1em 0 1em;
   padding: 1em;
@@ -979,7 +978,7 @@ textarea {
   display: inline-block;
   width: fit-content;
   margin-right: 1em;
-  width: 1;
+  width: 1em;
 }
 
 .subs {
@@ -1043,7 +1042,7 @@ input:valid {
 
 .memberships div p {
   color: #2B2828;
-  text-shadow: #555;
+  /*ext-shadow: #555;*/
 }
 
 .memberships div h3 {

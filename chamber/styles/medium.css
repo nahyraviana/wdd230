@@ -89,7 +89,9 @@
         text-align: center;
         gap: 8px;
     }
-
+    #welcome{
+        font-size: 60px;
+    }
     #hero{
         background-image: url("../images/house1.jpeg");
         grid-column: 1/4;
@@ -218,7 +220,7 @@
 /*Join*/
 .formGrid {
   display: grid;
-  grid-template-columns: 1fr,1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 /*contact*/
@@ -227,7 +229,7 @@
 
 .formGridContact{
     display: grid;
-    grid-template-columns: 1fr,1fr;
+    grid-template-columns: 1fr 1fr;
 }
 .formContainerContact{
     margin-left: 30px;

@@ -159,8 +159,8 @@ section h3{
 .s2{
     grid-row: 2/3;
     padding: 20px;
-    margin-top:  0%;
-   size: 400px;
+    margin-top: 0%;
+    /*size: 400px;*/
     width: 85%;
     height: 85%;
 }
@@ -179,7 +179,7 @@ section h3{
 .discover-container{
     color: #443535;
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 50px;
   row-gap: 50px;
@@ -200,7 +200,7 @@ margin: 60px;
 
 }
 .discover-container h3{
-        text-shadow: white;
+        /*text-shadow: white;*/
         padding-bottom: 10px;
 
 }
