@@ -10,7 +10,7 @@ const fulldate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(
 datefield.innerHTML = `<em>${fulldate}</em>`;
 
 let year = document.querySelector("#year");
-const currentYear =  new Date().getFullYear();
+const currentYear =  now.getFullYear();
 year.textContent= currentYear;
 
 /*Footer Last modified*/
@@ -27,7 +27,4 @@ function toggleMenu(){
 const x = document.getElementById("hamburguerBtn");
 x.onclick = toggleMenu;
 
-/* Join Hidden date and time*/
-var currentTime = new Date();
-var curdate = currentTime.getDate();
-document.getElementById("date-of-registration").value = curdate;
+

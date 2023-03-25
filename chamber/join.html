@@ -31,8 +31,8 @@
         <nav>
             <button id="hamburguerBtn"><span>&#9776;</span><span>x</span></button>
             <ul id="primaryNav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -73,6 +73,7 @@
                                 name="title"></label>
                         <label for="content">Business Description</label>
                         <textarea name="textarea" id="content"></textarea>
+                        <input type="hidden" id="date" name="date" value="CurrentTime">
                     </fieldset>
                     <fieldset>
                         <legend class="legend">Membership Levels</legend>
@@ -85,7 +86,6 @@
                         <label class="subs"  for="4"><input id="4" class="no100" type="radio" name="memberships">
                             <span> Gold Member</span></label>
                     </fieldset>
-                    <input id="date-of-registration" name="date-of-registration" class="input" type="hidden">
                     <input type="submit" value="Join Chamber" name="button" class="mySubmit">
                 </div>
             </form>
@@ -93,7 +93,7 @@
             <section class="memberships">
                 <div>
                     <h2>Membership Benefits</h2>
-                    <h3>NP Member</h3>
+                    <h3>$0 (NP Member)</h3>
                     <p>
                         NP Membership is for non profit organizations and there is no fee.
                     </p>
@@ -166,6 +166,7 @@
         </div>
     </footer>
     <script src="scripts/script.js"></script>
+    <script src="scripts/join.js"></script>
 </body>
 
 </html>
