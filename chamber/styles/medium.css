@@ -94,7 +94,6 @@
     }
 
     #hero{
-        background-image: url("../images/house1.jpeg");
         grid-column: 1/4;
         grid-row: 1/2;
         border: .3px solid #aaa;

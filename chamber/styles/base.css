@@ -24,7 +24,7 @@ h2{
 #welcome{
   font-size: 45px;
   color:white;
-  text-shadow: 2px 3px #6f6969;
+  text-shadow: 4px 4px#5D3C1F;
 }
 
 section h3{
@@ -139,9 +139,8 @@ button:hover{
 }
 
 #hero{
-  background-image: url("../images/house1.jpeg");
-  background-position-x: right;
-  background-position-y: bottom;
+  background-image: url("../images/house12.jpeg");
+  background-size: auto;
   background-attachment:fixed;
   margin: 0%;
   font-style:normal;

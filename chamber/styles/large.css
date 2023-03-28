@@ -82,7 +82,6 @@
     }
 
     #hero{
-        background-image: url("../images/house1.jpeg");
         background-size: 1600px;
         grid-column: 2/3;
         grid-row: 1/3;
