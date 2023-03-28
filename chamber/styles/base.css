@@ -599,6 +599,7 @@ discover-container{
 th, td {
   padding: 10px;
   border: 1px solid black;
+  color: #2B2828;
 }
 
 thead {
