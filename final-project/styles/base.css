@@ -1,0 +1,146 @@
+html{
+    margin: 0%;
+}
+/*--------------------HEADER--------------------*/
+body{
+    font-family: 'Fraunces', serif;
+    font-family: 'Karla', sans-serif;
+    margin: 0%;
+}
+header{
+    height: max-content;
+    background-color: #0199B4;
+    display: grid;
+    align-content: center;
+    justify-content: space-around;
+    grid-template-columns: 1fr 2fr .5fr;
+    text-align: center;
+    color:  #F4F5F5;
+    width: 100%;
+}
+#header-logo{
+    align-self: flex-start;
+}
+
+.social-logo{
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+
+}
+header a{
+  text-decoration: none;
+}
+
+nav{
+  grid-column: 2/3;
+  transition: .4s;
+  margin-top: 20px;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+}
+
+nav ul{
+  list-style-type: none;
+  padding: 10px;
+  margin:0;
+  text-align: center;
+  justify-content: center;
+}
+
+nav button{
+  margin: .2rem 2vw;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #fff
+}
+nav ul li{
+    padding: 40px;
+}
+nav ul li a{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+nav ul li.active a {
+  background-color: rgba(128, 204, 218,0.3);
+}
+
+nav ul li a:hover{
+  background-color: #B0DD31;
+  color: white;
+}
+
+nav ul{
+  display: none;
+}
+
+nav ul.open {
+  display: block;
+}
+
+.navButton span:nth-child(1){
+  display: block;
+  align-self:flex-start
+}
+
+.navButton span:nth-child(2){
+  display: none;
+}
+
+.navButton.open span:nth-child(1){
+  display: none;
+}
+.navButton.open span:nth-child(2){
+  display: block;
+}
+/*-----------------------BODY------------------*/
+
+.action{
+    background-image: url("../images/juice.jpg");
+    height: 650px;
+    background-size: 100%;
+    font-family: "karla", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-style: italic;
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow:3px 3px #0199B4;
+}
+.action h1{
+    padding-top: 100px;
+    margin: 0%;
+
+}
+.action h2{
+    text-transform: none; 
+    text-shadow:1px 2px #0199B4;
+
+    font-size: 30px;
+}
+button{
+    background-color: #B0DD31;
+    width: 20%;
+    height: 10%;
+    border: solid 1px#B0DD31;
+    color:  #2B2828;
+
+}
+button:hover{
+    background-color: #0199b494;
+
+}
+
+footer{
+    background-color: #0199B4;
+}

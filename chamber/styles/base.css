@@ -105,10 +105,11 @@ h1{
 
 .date{
   text-align: center;
+  color: #2B2828;
   grid-column: 1/4;
   margin-bottom: 20px;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .main-grid{
