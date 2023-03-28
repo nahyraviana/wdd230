@@ -975,6 +975,7 @@ form {
 }
 
 form fieldset {
+  color: #2B2828;
   margin: 10px;
   border: 1.5px solid #837198;
   background-color: #E7E0DA;
