@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh</title>
+    <meta name="description"
+        content="Bountiful foods: Website - Final project for Nahyra Viana in WDD 230: Web Fronted Development at Brigham Young University - Idaho">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,300;0,500;0,600;0,800;1,100;1,300;1,500;1,900&family=Karla:ital,wght@0,300;0,400;0,700;0,800;1,200;1,400;1,700;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="header-logo" src="images/1.png" alt="logo image" width="200"></a>
+        <nav>
+            <button class="navButton"><span>&#9776;</span><span>x</span></button>
+            <ul id="primaryNav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="social-logo">
+            <a href="https://facebook.com"><img class="facebook-logo" src="images/facebook.png"
+                    alt="Facebook logo image" width="40"></a>
+            <a href="https://instagram.com"><img class="instagram-logo" src="images/instagram.webp"
+                    alt=" Instagram logo image" width="40"></a>
+            <a href="https://twitter.com"><img class="twitter-logo" src="images/twitter.webp" alt=" Twitter logo image"
+                    width="40"></a>
+        </div>
+    </header>
+    <main>
+        <form method="get" action=" ">
+        <div class="formContainer">
+
+        <fieldset>
+            <legend class="legend">Make Your Special Drink</legend>
+            <label>Name<span class="redReminder">*</span>
+                <input type="text" name="fname" required></label>
+            <label>Email<span class="redReminder">*</span>
+                <input type="email" name="email" placeholder="youremail@youremail.com" required></label>
+            <label>Phone Number<span class="redReminder">*</span>
+                <input type="tel" name="phone" required></label>
+        </fieldset>
+
+        <fieldset>
+            <legend class="legend">Choose 3 Fruits</legend>
+            <label for="1"><input id="1" value="1" type="radio" name="fruit"></label>
+            <label for="2"><input id="2" value="2" type="radio" name="fruit"></label>
+            <label for="3"><input id="3" value="3" type="radio" name="fruit"></label>
+            <label for="4"><input id="4" value="4" type="radio" name="fruit"></label>
+            <label for="5"><input id="5" value="5" type="radio" name="fruit"></label>
+            <label for="6"><input id="6" value="6" type="radio" name="fruit"></label>
+            <label for="7"><input id="7" value="7" type="radio" name="fruit"></label>
+            <label for="8"><input id="8" value="8" type="radio" name="fruit"></label>
+            <label for="9"><input id="9" value="9" type="radio" name="fruit"></label>
+            <label for="10"><input id="10" value="10" type="radio" name="fruit"></label>
+            <label for="11"><input id="11" value="11" type="radio" name="fruit"></label>
+            <label for="12"><input id="12" value="12" type="radio" name="fruit"></label>
+            <label for="13"><input id="13" value="13" type="radio" name="fruit"></label>
+            <label for="14"><input id="14" value="14" type="radio" name="fruit"></label>
+            <label for="15"><input id="15" value="15" type="radio" name="fruit"></label>
+            <label for="16"><input id="16" value="16" type="radio" name="fruit"></label>
+
+        </fieldset>
+        <fieldset>
+            <label for="content">Special Instructions (if needed)</label>
+            <textarea name="textarea" id="content"></textarea>
+            </fieldset>
+        <input type="submit" value="Join Chamber" name="button" class="mySubmit">
+        </div>
+        </form>
+
+    </main>
+    <footer>
+        <img src="images/2.png" alt="logo image" width="80">
+        <p id="address">1993 Logan Ave
+            San Diego, CA 92113
+            United States</p>
+        <div class="social-logo">
+            <a href="https://facebook.com"><img id="facebook-logo" src="images/facebook.png" alt="Facebook logo image"
+                    width="40"></a>
+            <a href="https://instagram.com"><img id="instagram-logo" src="images/instagram.webp"
+                    alt=" Instagram logo image" width="40"></a>
+            <a href="https://twitter.com"><img id="twitter-logo" src="images/twitter.webp" alt=" Twitter logo image"
+                    width="40"></a>
+        </div>
+        <p id="email">support@bountifulfoods.com</p>
+        <p id="phone">(877) 221 3882</p>
+        <p id="last">Last Modified: <span id="modified"> </span></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
