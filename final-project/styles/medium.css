@@ -1,10 +1,38 @@
-nav ul{
-  display: flex;
-}
-nav button{
-    display: none;
-}
- nav ul#primaryNav{
+@media only screen and (min-width: 40rem){
+    nav ul{
+        display: flex;
+    }
+    nav button{
+        display: none;
+    }
+    nav ul#primaryNav{
         display: flex ;
         justify-content: flex-start;
     }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    .social-logo{
+        display: flex;
+        gap: 30px;
+        grid-column: 2/3;
+    }
+    #email{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    #phone{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    #last{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #address{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}
