@@ -1,5 +1,5 @@
 const requestURL =
-    "https://nahyraviana.github.io/wdd230/final-project/scripts/fruit - data.json";
+    "https://nahyraviana.github.io/wdd230/final-project/scripts/fruit-data.json";
 
 const cards = document.querySelector(".cards");
 
