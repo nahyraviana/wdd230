@@ -1,7 +1,7 @@
 /*Directory JSON Data*/
 
 async function getCompaniesData() {
-    const response = await fetch("https://nahyraviana.github.io/wdd230/chamber/scripts/data.json");
+        ("https://nahyraviana.github.io/wdd230/chamber/scripts/data.json");
     const data = await response.json();
     displaySpotlights(data.companies);
 }

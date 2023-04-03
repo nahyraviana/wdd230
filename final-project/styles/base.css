@@ -7,6 +7,9 @@ body{
     font-family: 'Karla', sans-serif;
     margin: 0%;
 }
+input{
+  color: #2B2828;
+}
 header{
     height: max-content;
     background-color: #0199B4;
