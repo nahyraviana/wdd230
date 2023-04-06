@@ -57,39 +57,6 @@ onlyCheckBox()
 
 }
 
-// get the form element
-const form = document.querySelector(".form");
-
-// add event listener to the form submit event
-form.addEventListener("submit", (event) =>
-{
-  // prevent the form from submitting
-  event.preventDefault();
-  // extract the form data
-  const formData = new FormData(form);
-  const firstName = formData.get("first-name");
-  const email = formData.get("email");
-  const phone = formData.get("phone");
-  const specialInstructions = formData.get("instructions");
-  const selectedFruits = formData.getAll("fruit");
-
-  // get the total nutritional information for the selected fruits
-  let totalCarbs = 0;
-  let totalProtein = 0;
-  let totalFat = 0;
-  let totalSugar = 0;
-  let totalCalories = 0;
-
-  selectedFruits.forEach((fruit) =>
-  {
-    const fruitInfo = fruitData[fruit];
-    totalCarbs += fruitInfo.carbs;
-    totalProtein += fruitInfo.protein;
-    totalFat += fruitInfo.fat;
-    totalSugar += fruitInfo.sugar;
-    totalCalories += fruitInfo.calories;
-  });
-})
 
 //const formData = document.querySelector(".form");
 //formData.addEventListener("submit", (e) =>

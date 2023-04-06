@@ -1,77 +1,56 @@
-const url =
-    "https://nahyraviana.github.io/wdd230/final-project/scripts/fruit-data.json";
-
-fetch(url)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    console.log(jsonObject);
-    const fruits1 = jsonObject["fruits"];
-    fruits1.forEach(calculateNutrition);
-  });
-
-const firstNameInput = document.getElementById("first-name");
-const emailInput = document.getElementById("email");
-const phoneInput = document.getElementById("phone");
-const fruitSelect = document.querySelector(".fruit-option").querySelectorAll('[type="checkbox"]');
-const specialInstructionsInput = document.getElementById("instructions");
-const submitButton = document.querySelector(".mySubmit");
-const orderDate = document.createElement("p");
-orderDate.setAttribute("id", "order-date");
-const nutritionFacts = document.createElement("p");
-nutritionFacts.setAttribute("id", "nutrition-facts");
 
 
+// get the form element
+const myForm = document.querySelector(".form");
 
-submitButton.addEventListener("click", (e) =>
+// add event listener to the form submit event
+myForm.addEventListener("submit", () =>
 {
-  e.preventDefault();
-  const firstName = firstNameInput.value;
-  const email = emailInput.value;
-  const phone = phoneInput.value;
-  const selectedFruits = getSelectedFruits();
-  const specialInstructions = specialInstructionsInput.value;
-  const formattedDate = new Date().toDateString();
-  const nutritionInfo = calculateNutrition(selectedFruits);
-  orderDate.textContent = formattedDate;
-  nutritionFacts.textContent = nutritionInfo;
+  // prevent the form from submitting
 
-    output.appendChild(firstName);
-    output.appendChild(email);
-    output.appendChild(phone);
-    output.appendChild(specialInstructions);
-    output.appendChild(nutritionFacts);
-    output.appendChild(orderDate);
-  console.log(output);
-});
+  // extract the form data
+  const formData = new FormData(myForm);
+  const firstName = formData.get("first-name");
+  const email = formData.get("email");
+  const phone = formData.get("phone");
+  const specialInstructions = formData.get("special-instructions");
+  const selectedFruits =formData.getAll("name")
 
-function getSelectedFruits() {
-  const selectedFruits = [];
-  const options = fruitSelect.options;
-  for (let i = 0; i < options.length; i++) {
-    const optionInput = options[i];
-    if (optionInput.checked) {
-      selectedFruits.push(optionInput.value);
-    }
-  }
-  return selectedFruits;
-}
-
-function calculateNutrition(selectedFruits){
+  // get the total nutritional information for the selected fruits
   let totalCarbs = 0;
   let totalProtein = 0;
   let totalFat = 0;
   let totalSugar = 0;
   let totalCalories = 0;
 
-  selectedFruits.forEach((fruit) =>{
-    totalCarbs += fruit.carbs;
-    totalProtein += fruit.protein;
-    totalFat += fruit.fat;
-    totalSugar += fruit.sugar;
-    totalCalories += fruit.calories;
+  selectedFruits.forEach((fruit) =>
+  {
+    const fruitInfo = fruit.name;
+    totalCarbs += fruitInfo.carbs;
+    totalProtein += fruitInfo.protein;
+    totalFat += fruitInfo.fat;
+    totalSugar += fruitInfo.sugar;
+    totalCalories += fruitInfo.calories;
   });
 
-  return selectedFruits
-}
+  // get the current date
+  const currentDate = new Date();
+  const orderDate = `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate()}`;
+
+  // create the order summary element and update its content
+  const orderSummary = document.createElement("div");
+  orderSummary.innerHTML = `
+    <h2>Order Summary</h2>
+    <p>First Name: ${firstName}</p>
+    <p>Email: ${email}</p>
+    <p>Phone: ${phone}</p>
+    <p>Selected Fruits: ${selectedFruits.join(", ")}</p>
+    <p>Special Instructions: ${specialInstructions}</p>
+    <p>Order Date: ${orderDate}</p>
+    <p>Total Carbs: ${totalCarbs}</p>
+    <p>Total Protein: ${totalProtein}</p>
+    <p>Total Fat: ${totalFat}</p>
+    <p>Total Sugar: ${totalSugar}</p`;
+
+  console.log(orderSummary)
+});

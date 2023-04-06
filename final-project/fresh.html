@@ -42,7 +42,7 @@
         <form class="form" method="get" action="">
         <div class="formContainer">
 
-        <fieldset>
+        <fieldset class="info">
             <legend class="legend">Make Your Special Drink</legend>
             <label>Name<span class="redReminder">*</span>
                 <input id="first-name" type="text" name="name" required></label>
@@ -53,18 +53,17 @@
         </fieldset>
 
 
-        <fieldset>
+        <fieldset class="choose">
             <legend class="legend">Choose 3 Fruits</legend>
         <div class="fruit-option"></div>
 
         </fieldset>
-        <fieldset>
-            <label for="instructions">Special Instructions (if needed)</label>
+        <fieldset class="special">
+            <legend for="instructions">Special Instructions (if needed)</legend>
             <textarea name="textarea" id="instructions"></textarea>
             </fieldset>
         <button type="submit" value="Submit" name="button" class="mySubmit">Submit</button>
-        
-        
+
         </div>
         </form>
         <div id="output"></div>
@@ -82,13 +81,14 @@
             <a href="https://twitter.com"><img id="twitter-logo" src="images/twitter.webp" alt=" Twitter logo image"
                     width="40"></a>
         </div>
-        <p id="email">support@bountifulfoods.com</p>
-        <p id="phone">(877) 221 3882</p>
+        <p id="company-email">support@bountifulfoods.com</p>
+        <p id="company-phone">(877) 221 3882</p>
         <p id="last">Last Modified: <span id="modified"> </span></p>
     </footer>
     <!--<script src="scripts/fresh-form.js"></script>-->
     <script src="scripts/try-fresh.js"></script>
     <script src="scripts/localStorage.js"></script>
+    <script src="scripts/output.js"></script>
 
 
 </body>

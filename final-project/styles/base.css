@@ -163,3 +163,48 @@ footer{
 footer a img{
     width: 30px;
 }
+
+
+
+
+/*-----------------FRESH PAGE------------*/
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+legend{
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family:'Fraunces', serif;
+
+}
+.fruit-option{
+  display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+* {
+  box-sizing:border-box;
+}
+textarea {
+  width:100%;
+  resize: vertical;
+  padding:15px;
+  border-radius:15px;
+  border:0;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.1);
+  height:100px;
+}
+
+fieldset {
+  margin: 30px;
+    display: block;
+    border-width: 1px;
+    border-style: groove;
+    border-color: none;
+    border-image: initial;
+}
