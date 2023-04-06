@@ -7,6 +7,11 @@ body{
     font-family: 'Karla', sans-serif;
     margin: 0%;
 }
+h1{
+
+  font-size: 40px;
+
+}
 input{
   color: #2B2828;
 }
@@ -106,7 +111,7 @@ nav ul.open {
 .navButton.open span:nth-child(2){
   display: block;
 }
-/*-----------------------BODY------------------*/
+/*-----------------------MAIN------------------*/
 .main-index{
   display: block;
 }
@@ -116,18 +121,18 @@ nav ul.open {
     background-image: url("../images/juice2.jpg");
     background-size: 100%;
     height: 650px;
-    font-family: "karla", sans-serif;
-    font-weight: 600;
     text-align: center;
     font-style: italic;
     color: #fff;
-    font-size: 40px;
     text-transform: uppercase;
 
 }
 .action h1{
     padding-top: 150px;
     margin: 0%;
+    font-size: 70px;
+    font-family: "karla", sans-serif;
+    font-weight: 600;
 
 }
 .action h2{
@@ -152,7 +157,7 @@ button:hover{
 
 
 }
-
+/*-------------FOOTER-------------*/
 footer{
     background-color: #0199B4;
     display: flex;
@@ -207,4 +212,10 @@ fieldset {
     border-style: groove;
     border-color: none;
     border-image: initial;
+}
+
+.formContainer button{
+  font-size: 12px;
+   width: 8%;
+  height: 3%;
 }
