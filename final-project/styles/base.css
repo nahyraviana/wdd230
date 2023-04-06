@@ -112,6 +112,9 @@ nav ul.open {
   display: block;
 }
 /*-----------------------MAIN------------------*/
+div{
+  display: grid;
+}
 .main-index{
   display: block;
 }
@@ -142,9 +145,10 @@ nav ul.open {
     font-size: 30px;
 }
 button{
+    justify-self: center;
     background-color: #0199B4;
-    width: 20%;
-    height: 8%;
+    width: 15%;
+    height: 30%;
     border: solid 1px #0199B4;
     font-size: 20px;
     color:  #fff;
@@ -168,9 +172,6 @@ footer{
 footer a img{
     width: 30px;
 }
-
-
-
 
 /*-----------------FRESH PAGE------------*/
 .info{
@@ -213,9 +214,19 @@ fieldset {
     border-color: none;
     border-image: initial;
 }
-
-.formContainer button{
-  font-size: 12px;
-   width: 8%;
-  height: 3%;
+.fresh-h1{
+  text-align: center;
 }
+.formContainer button{
+  font-size: 15px;
+   width: 10%;
+  height: 40%;
+  margin-left: 30px;
+}
+/*------------ABOUT US PAGE--------------*/
+
+.main-aboutus{
+  display: block;
+}
+
+
