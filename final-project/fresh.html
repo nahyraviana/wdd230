@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="en">
 
 <head>
@@ -39,33 +39,35 @@
         </div>
     </header>
     <main>
-        <form method="get" action=" ">
+        <form class="form" method="get" action="">
         <div class="formContainer">
 
         <fieldset>
             <legend class="legend">Make Your Special Drink</legend>
             <label>Name<span class="redReminder">*</span>
-                <input type="text" name="fname" required></label>
+                <input id="first-name" type="text" name="name" required></label>
             <label>Email<span class="redReminder">*</span>
-                <input type="email" name="email" placeholder="youremail@youremail.com" required></label>
+                <input id="email" type="email" name="email" placeholder="youremail@youremail.com" required></label>
             <label>Phone Number<span class="redReminder">*</span>
-                <input type="tel" name="phone" required></label>
+                <input id="phone" type="tel" name="phone" required></label>
         </fieldset>
 
 
         <fieldset>
             <legend class="legend">Choose 3 Fruits</legend>
-            <label class="fruit-option"></label>
-        </fieldset>
+        <div class="fruit-option"></div>
 
+        </fieldset>
         <fieldset>
-            <label for="content">Special Instructions (if needed)</label>
-            <textarea name="textarea" id="content"></textarea>
+            <label for="instructions">Special Instructions (if needed)</label>
+            <textarea name="textarea" id="instructions"></textarea>
             </fieldset>
-        <input type="submit" value="Join Chamber" name="button" class="mySubmit">
+        <button type="submit" value="Submit" name="button" class="mySubmit">Submit</button>
+        
+        
         </div>
         </form>
-
+        <div id="output"></div>
     </main>
     <footer>
         <img src="images/2.png" alt="logo image" width="80">
@@ -86,6 +88,7 @@
     </footer>
     <!--<script src="scripts/fresh-form.js"></script>-->
     <script src="scripts/try-fresh.js"></script>
+    <script src="scripts/localStorage.js"></script>
 
 
 </body>

@@ -6,7 +6,7 @@ const weatherIcon = document.getElementById("weather-icon");
 const captionDesc = document.getElementById("weather-sun");
 let windChill = document.getElementById("chill");
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=40.760780&lon=-111.891045&units=imperial&appid=1af0a868a3015b9525694dd97ced9a53&';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=40.760780&lon=-111.891045&units=imperial&appid=72c4ed5f83039f3afa3968069102cd0e';
 
 
 async function apiFetch() {

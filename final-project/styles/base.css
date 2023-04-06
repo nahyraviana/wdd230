@@ -39,6 +39,7 @@ header a{
 }
 
 nav{
+  grid-row: 1/2;
   grid-column: 2/3;
   transition: .4s;
   margin-top: 20px;
@@ -106,41 +107,49 @@ nav ul.open {
   display: block;
 }
 /*-----------------------BODY------------------*/
+.main-index{
+  display: block;
+}
+
 
 .action{
-    background-image: url("../images/juice.jpg");
-    height: 650px;
+    background-image: url("../images/juice2.jpg");
     background-size: 100%;
+    height: 650px;
     font-family: "karla", sans-serif;
     font-weight: 600;
     text-align: center;
     font-style: italic;
     color: #fff;
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
-    text-shadow:3px 3px #0199B4;
+
 }
 .action h1{
-    padding-top: 100px;
+    padding-top: 150px;
     margin: 0%;
 
 }
 .action h2{
     text-transform: none; 
-    text-shadow:1px 2px #0199B4;
+    text-shadow:1px 2px #828282;
 
     font-size: 30px;
 }
 button{
-    background-color: #B0DD31;
+    background-color: #0199B4;
     width: 20%;
-    height: 10%;
-    border: solid 1px#B0DD31;
-    color:  #2B2828;
+    height: 8%;
+    border: solid 1px #0199B4;
+    font-size: 20px;
+    color:  #fff;
+    margin-bottom: 40px;
 
 }
 button:hover{
-    background-color: #0199b494;
+    background-color: #80CCDA;
+    border: solid 1px #80CCDA;
+
 
 }
 

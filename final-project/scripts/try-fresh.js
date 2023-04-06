@@ -1,7 +1,7 @@
 const requestURL =
     "https://nahyraviana.github.io/wdd230/final-project/scripts/fruit-data.json";
 
-const cards = document.querySelector(".cards");
+const fruitDiv = document.querySelector(".fruit-option");
 
 fetch(requestURL)
   .then(function (response) {
@@ -16,17 +16,94 @@ fetch(requestURL)
 function displayFruitOption(fruit) {
   // Create elements to add to the document
     let option = document.createElement("label");
-    const radio = document.createElement("input");
-    radio.setAttribute("type", "radio");
-    radio.setAttribute("value", "fruit");
-    let fruitName = document.createElement("p");
-    radio.append(fruitName);
+    let fruitName = fruit.name;
+    const checkbox = document.createElement("input");
+    checkbox.setAttribute("type", "checkbox");
+  checkbox.value = fruitName;
+  checkbox.name = fruitName;
+    checkbox.setAttribute("class", "check");
+    option.appendChild(checkbox);
+    option.append(fruitName);
     fruitName.textContent = (fruit.name);
 
   // Add/append the label(card) with the input element
-    option.appendChild(radio);
+    //option.appendChild(radio);
 
   // Add/append the existing HTML label with the cards class with the section(card)
-    document.querySelector(".fruit-option").appendChild(option);
+  //fruitDiv.appendChild(checkbox);
+
+  fruitDiv.appendChild(option);
+
+  function onlyCheckBox() {
+	let checkbox = document.querySelector(".fruit-option").querySelectorAll('[type="checkbox"]');
+	let limit = 3;
+	for (let i = 0; i < checkbox.length; i++) {
+		checkbox[i].onclick = function() {
+			let checkedCount = 0;
+				for (let i = 0; i < checkbox.length; i++) {
+				checkedCount += (checkbox[i].checked) ? 1 : 0;
+			}
+			if (checkedCount > limit) {
+				console.log("You can select maximum of " + limit + " fruit options.");
+				alert("You can select maximum of " + limit + " fruit options.");
+				this.checked = false;
+			}
+		}
+	}
 }
+
+onlyCheckBox()
+
+
+}
+
+// get the form element
+const form = document.querySelector(".form");
+
+// add event listener to the form submit event
+form.addEventListener("submit", (event) =>
+{
+  // prevent the form from submitting
+  event.preventDefault();
+  // extract the form data
+  const formData = new FormData(form);
+  const firstName = formData.get("first-name");
+  const email = formData.get("email");
+  const phone = formData.get("phone");
+  const specialInstructions = formData.get("instructions");
+  const selectedFruits = formData.getAll("fruit");
+
+  // get the total nutritional information for the selected fruits
+  let totalCarbs = 0;
+  let totalProtein = 0;
+  let totalFat = 0;
+  let totalSugar = 0;
+  let totalCalories = 0;
+
+  selectedFruits.forEach((fruit) =>
+  {
+    const fruitInfo = fruitData[fruit];
+    totalCarbs += fruitInfo.carbs;
+    totalProtein += fruitInfo.protein;
+    totalFat += fruitInfo.fat;
+    totalSugar += fruitInfo.sugar;
+    totalCalories += fruitInfo.calories;
+  });
+})
+
+//const formData = document.querySelector(".form");
+//formData.addEventListener("submit", (e) =>
+//{
+//  e.preventDefault();
+//  let selectedFruit = [];
+//  document.querySelectorAll('[type="checkbox"]').forEach(item =>
+//  {
+//    if (item.checked === true)
+//    {
+//      selectedFruit.push(item.textContent);
+//    }
+//
+//  })
+//  console.log(selectedFruit);
+//})
 
