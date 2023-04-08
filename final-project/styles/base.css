@@ -121,27 +121,25 @@ div{
 
 
 .action{
-    background-image: url("../images/juice2.jpg");
+    background-image: url("../images/5.jpg");
     background-size: 100%;
     height: 650px;
     text-align: center;
     font-style: italic;
-    color: #fff;
-    text-transform: uppercase;
-
+    color: #382112;
 }
 .action h1{
-    padding-top: 150px;
+    padding-top: 100px;
     margin: 0%;
+    padding-bottom: 0%;
     font-size: 70px;
-    font-family: "karla", sans-serif;
-    font-weight: 600;
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
 
 }
 .action h2{
-    text-transform: none; 
-    text-shadow:1px 2px #828282;
-
+  margin-top: 0%;
+font-weight: 300;
     font-size: 30px;
 }
 button{
@@ -229,4 +227,41 @@ fieldset {
   display: block;
 }
 
+.content{
+  margin-left: 40px;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
 
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 400px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 1%;
+
+
+}
+.tittle-content{
+  display: grid;
+  justify-content: center;
+}
+
+.icon-content{
+   margin-left: 135px;
+
+}
+.organic-h1{
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.main-aboutus h1{
+  text-align: center;
+}
