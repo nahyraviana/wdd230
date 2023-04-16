@@ -121,25 +121,29 @@ div{
 
 
 .action{
-    background-image: url("../images/5.jpg");
+    background-image: url("../images/juice2.jpg");
     background-size: 100%;
     height: 650px;
     text-align: center;
     font-style: italic;
-    color: #382112;
+    color: #ffffff;
 }
 .action h1{
     padding-top: 100px;
     margin: 0%;
     padding-bottom: 0%;
     font-size: 70px;
-    font-family: 'Fraunces', serif;
-    font-weight: 300;
+    font-weight: 400;
+    text-transform: uppercase;
 
 }
 .action h2{
+  font-family: 'Fraunces', serif;
+    font-style: italic;
+    text-shadow: 2px 2px #7b6666;
+
   margin-top: 0%;
-font-weight: 300;
+  font-weight: 200;
     font-size: 30px;
 }
 button{

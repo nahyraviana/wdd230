@@ -11,15 +11,23 @@
     }
 
     .main-index{
+    
+        font-size: 20px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto
+    }
+    .main-index h1{
+        text-align: center;
+
     }
     .action{
         grid-column: 1/3;
         grid-row: 1/2;
     }
     .fruit-truck{
+            margin-left: 40px;
+
         grid-column: 1/2;
         grid-row: 2/3;
     }
@@ -30,6 +38,7 @@
     }
 
     .call{
+            margin-left: 40px;
         grid-column: 1/3;
         grid-row: 3/4;
     }
@@ -39,8 +48,40 @@
         grid-row: 4/5;
     }
     #weather{
+       text-align: center;
         grid-column: 2/3;
         grid-row: 5/6;
+    }
+    #temp{
+        font-weight: 900;
+  font-size: 40px;
+   color: #2B2828;
+   text-shadow:2px 2px rgb(121, 119, 119);
+    }
+    #weather-sun{
+        font-style: italic;
+    }
+    .forecast{
+        margin-left: 80px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    
+    .forecast-day{
+               text-align: center;
+
+         border: 1px solid black;
+         text-align: center;
+         padding: 10px;
+    }
+  
+    .forecast-day--temp{
+       
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
     }
 
     .cali-info{
@@ -49,9 +90,29 @@
     }
 
     .why-organic{
+            margin-left: 40px;
+        display: flex;
+        flex-direction: column;
         grid-column: 1/2;
         grid-row: 7/8;
     }
+
+    .cali-info h1{
+    grid-column: 1/5;
+    grid-row: 5/6;
+}
+.cali-info p{
+    margin-left: 40px;
+    max-width:fit-content;
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+.cali-info   img{
+    grid-column: 3/5;
+    grid-row: 6/7;
+    margin: 0 40px 40px 20px;
+
+}
 
 
 
@@ -82,7 +143,7 @@
         grid-column: 1/2;
         grid-row: 2/3;
     }
-}
+
 
 
 /*------ABOUT US PAGE---------*/
@@ -150,4 +211,6 @@
     font-size: 18px;
     margin: 10px;;
     padding: 0%;
+}
+
 }

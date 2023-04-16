@@ -2,7 +2,7 @@
 /*jshint esversion: 7 */
 let currentTemp = document.getElementById("temp");
 let windSpeed = document.getElementById("speed");
-const weatherIcon = document.getElementById("weather-icon");
+const weatherIcon = document.getElementById("weather-icon");    
 const captionDesc = document.getElementById("weather-sun");
 let windChill = document.getElementById("chill");
 let humidity = document.getElementById("humidity")
@@ -77,15 +77,19 @@ fetchForecast = function () {
 
 			var fday = "";
 			data.daily.forEach((value, index) => {
-				if (index > 0 && index < 4) {
-					var dayname = new Date(value.dt * 1000).toLocaleDateString("en", {
-						weekday: "long",
-					});
-					var icon = value.weather[0].icon;
+                if (index > 0 && index < 4)
+                {
+                    var dayname = new Date(value.dt * 1000).toLocaleDateString("en", {
+                        weekday: "long",
+                    });
+                    /*var icon = value.weather[0].icon;
+                    var iconurl = "http://openweathermap.org/img/w/" + icon + ".png";
+                    var iconDesc = value.weather[0].description;
+                    <p><span class="ico-${icon}" title="${icon}" alt"${iconDesc}" src"${iconurl}"></span></p>*/
+
 					var temp = value.temp.day.toFixed(0);
 					fday = `<div class="forecast-day">
 						<p>${dayname}</p>
-						<p><span class="ico-${icon}" title="${icon}"></span></p>
 						<div class="forecast-day--temp">${temp}<sup>°F</sup></div>
 					</div>`;
 					forecastEl[0].insertAdjacentHTML('beforeend', fday);
